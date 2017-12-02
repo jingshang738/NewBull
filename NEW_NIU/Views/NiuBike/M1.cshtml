@@ -1,0 +1,459 @@
+﻿@{
+    ViewBag.Title = "M1";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+
+@section HeadScript_Link{
+   <!--[if lt IE 9]>
+<script src="~/Content/M1/js/html5shiv_23e126e6.js"></script>
+     
+ <![endif]-->
+<link href="~/Content/M1/css/common_6c4817c9.css" rel="stylesheet" />
+<link href="~/Content/M1/css/common_56008e36.css" rel="stylesheet" />
+<link href="~/Content/M1/css/index_1dbfa7ce.css" rel="stylesheet" />
+
+
+}
+
+@section HeadLink{
+   <script>
+    (function () {
+        var o = navigator.userAgent,
+                r = function (r) {
+                    return o.indexOf(r) > -1
+                };
+        if ((r("Android") && r("Mobile") || r("iPhone") || r("iPod") || r("Symbian") || r("IEMobile") || r("MI PAD"))) {
+            location.href = "http://m.niu.com";
+        }
+    })();
+</script>
+
+<link id="header_links" type="text/css" href="~/Content/M1/css/style_6965f5af.css" rel="stylesheet" />
+
+<<<<<<< .mine
+<link rel="stylesheet" id="header_links" type="text/css" href="/Content/M1/css/style_6965f5af.css" />
+=======
+>>>>>>> .r144
+}
+
+@section Body{
+   <input type="hidden" class='J_niufont' data-class='niu-font' value='syNormal'>
+<input type="hidden" class='J_niufont' data-class='niu-num-font' value='DINOffcPro-CondBold'>
+
+<div class="pro-nav-head J_bar">
+    <div class="container  clearfix">
+        <h2 class='pro-name'>M1</h2>
+        <div class="pro-features buy">
+            <a class="current  tab-href" href='/m1/'>概述</a>
+            <a class='tab-href ' href='/m1/design'>设计</a>
+            <a class='tab-href ' href='/m1/battery'>电力系统</a>
+            <a class='tab-href ' href='/m1/crafts'>工艺</a>
+            <a class='tab-href ' href='/m1/motion'>动力</a>
+            <a class='tab-href ' href='/m1/lamp'>灯光系统</a>
+            <a class='tab-href ' href='/m1/smart'>智能系统</a>
+            <a class='tab-href ' href='/m1/params'>参数</a>
+            <a class='tab-href ' href='http://www.niu.com/doc/m1/' target="_blank">说明书</a>
+            <a class=" btn buy-btn " id="storem1Baidutj-1" onclick='pyRegisterCvt();' target='_blank' href="http://store.niu.com/buy/m1/">立即购买</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="m1-summary">
+    <div class="section summary-head ">
+        <div class="cover"></div>
+        <div class="abs-text">
+            <h1 class='niu-font'>
+                科&nbsp;&nbsp;技&nbsp;&nbsp;玩&nbsp;&nbsp;转&nbsp;&nbsp;城&nbsp;&nbsp;市
+            </h1>
+            <p class="play-btn J_play hide">
+                观看 M1 产品视频 <span class='play-icon'></span>
+            </p>
+        </div>
+        <p class="marks">*全新M1上线，产品实物可能与部分宣传视频或图片有细微差别，请以实物为准。</p>
+<<<<<<< .mine
+        
+        <video class='J_fullVideo' data-hei='805' poster="/Content/M1/img/s-2v_9b38e42c.png" autoplay loop>
+            <source src="/static/store/widget/products/m1/img/s-2v.mp4" type="video/mp4">
+            <source src="/static/store/widget/products/m1/img/s-2v.webm" type="video/webm">
+            <img src="/Content/M1/img/s-2v_9b38e42c.png" alt="">
+=======
+
+        <video class='J_fullVideo' data-hei='805' poster="~/Content/M1/img/s-2v_9b38e42c.png" autoplay loop>
+
+                <source src="~/Content/M1/img/s-2v.mp4" type="video/mp4" />
+
+                <source src="~/Content/M1/img/s-2v.webm" type="video/webm" />
+
+            <img src="~/Content/M1/img/s-2v_9b38e42c.png" alt="" />
+>>>>>>> .r144
+        </video>
+    </div>
+    <div class="section summary-design m1-common t-w">
+        <div class="abs-text ">
+            <h2 class="title niu-font">精彩的科技<br>出彩的设计</h2>
+            <p class="content">M1 在延续 NIU 家族设计语言的同时，加入更多潮流色彩元素、以及聪明过人的智能科技，为你的行动表现力加分。</p>
+            <a class="link" href="/m1/design" target='_blank'>了解设计<span class='icon-right'></span></a>
+        </div>
+        <ul class="img-list J_imgBlock" data-index='0'>
+            <li class='img-a current'></li>
+            <li class='img-b'></li>
+            <li class='img-d'></li>
+            <li class='img-e'></li>
+        </ul>
+        <ul class="nav-forward container J_forNav">
+            <li class="left-forward hide">
+                <span class='icon-left'></span>
+            </li>
+            <li class="right-forward">
+                <span class='icon-right'></span>
+            </li>
+        </ul>
+        <ul class="nav-rect clearfix  J_listNav">
+            <li class='current'></li>
+            <li></li>
+            <li></li>
+            <li class='last'></li>
+        </ul>
+    </div>
+    <div class="section summary-battery m1-common-white">
+        <h2 class="title niu-font">更理想的锂电，和理想中一样</h2>
+        <p class="content">M1 的锂电包采用原装进口锂电电芯*，高效的 BMS 电池管理系统，<br>仅 8.2kg* 的轻巧重量却能提供 120km* 超长续航。 铝合金一体化外观精致细腻。<br>成功地让 M1 的锂电包人见人爱。</p>
+        <a class="link" href="/m1/battery" target='_blank'>了解电力系统<span class='icon-right'></span></a>
+    </div>
+    <div class="section summary-battery-par">
+        <ul class="par-list clearfix">
+            <li>
+                <h3 class="par-tit">重量轻至</h3>
+                <h2 class="par-num">
+                    <b class='J_mark' style='font-size: 20px;position: absolute;left: 245px;top: -14px; display:none;'>*</b> <span class=' niu-num-font J_rockNum' data-tar='8.2' data-unit='0.1' data-init='16'>0</span>
+                </h2>
+                <p class="par-unit">KG</p>
+            </li>
+            <li>
+                <h3 class="par-tit">续航远至</h3>
+                <h2 class="par-num">
+                    <b class='J_mark' style='font-size: 20px;position: absolute;left: 250px;top: -14px; display:none;'>*</b> <span class=' niu-num-font J_rockNum' data-tar='120' data-unit='1' data-init='0'>0</span>
+                </h2>
+                <p class="par-unit">KM</p>
+            </li>
+            <li>
+                <h3 class="par-tit">充电快至</h3>
+                <h2 class="par-num">
+                    <b class='J_mark' style='font-size: 20px;position: absolute;left: 220px;top: -14px; display:none;'>*</b> <span class=' niu-num-font J_rockNum' data-tar='3' data-unit='1' data-init='24'>24</span>
+                </h2>
+                <p class="par-unit">HOURS</p>
+            </li>
+        </ul>
+    </div>
+    <div class="section summary-craft ">
+        <div class="abs-text m1-common">
+            <h2 class="title niu-font">工艺精湛，细致入微</h2>
+            <p class="content">
+                结构和用料的精致考究，让 M1 从内到外都稳健可靠, 又不失轻巧灵活。<br>精良的模具与漆面做工，让 M1 无论远近，都耐人寻味。
+            </p>
+            <a class="link" href="/m1/crafts" target='_blank'>了解车身工艺<span class='icon-right'></span></a>
+        </div>
+        <video id='J_craftVideo' poster="~/Content/M1/img/s-11_c7dba636.png">
+
+                <source src="~/Content/M1/img/s-1.mp4" type="video/mp4" />
+
+
+                <source src="~/Content/M1/img/s-1.webm" type="video/webm" />
+            <img src="~/Content/M1/img/s-11_c7dba636.png" alt="" />
+        </video>
+        <p class="marks">*全新M1上线，产品实物可能与部分宣传视频或图片有细微差别，请以实物为准。</p>
+    </div>
+    <div class="section summary-motion m1-common-white">
+        <div class="abs-text">
+            <h2 class="title niu-font">收放自如带来酣畅驾趣</h2>
+            <p class="content">NIU 联合研发无刷永磁电机，高效输出，动力强劲稳定。高性能刹车组件，辅以EBS电子刹车系统，充分理解你的行驶意图。穿梭每条街道，让你津津乐道。</p>
+            <a class="link" href="/m1/motion" target='_blank'>了解动力系统<span class='icon-right'></span></a>
+        </div>
+    </div>
+    <div class="section summary-lamp">
+        <div class="abs-text m1-common">
+            <h2 class="title niu-font">标志性的灯光系统<br>更佳安全保障</h2>
+            <p class="content">家族式的灯光系统设计在 M1 中得到了延续，<br>更多科技元素的采用，更加美观时尚。安全<br>为本的理念，让行车过程安全放心。</p>
+            <a class="link" href="/m1/lamp" target='_blank'>了解灯光系统<span class='icon-right'></span></a>
+        </div>
+    </div>
+    <div class="section summary-safe m1-common">
+        <div class="abs-text">
+            <h2 class="title niu-font">不怕丢的<span class='niu-num-font'>M1</span> 省心更安心</h2>
+            <p class="content">小牛电动推出了精心定制的牛油保服务，包括整车盗抢赔付，<br>人身意外保障和第三者责任保障，全方位保证人车安全。</p>
+            <a class="link" href="http://www.niu.com/niucover" target='_blank'>了解牛油保服务<span class='icon-right'></span></a>
+        </div>
+    </div>
+    <div class="section summary-system">
+        <div class="abs-text m1-common">
+            <h2 class="title">
+                <span class="niu-font">聪明的你，需要聪明的</span><span class='niu-num-font'>M1</span>
+            </h2>
+            <p class="content">
+                为了和崇尚智能的你想法合拍，我们不断提升智能化设计的修为。在历经长久思考和大量实车测试之后，新增 11 大智能设计, 让 M1 成为更懂你的同路知己。
+            </p>
+            <a class="link" href="/m1/smart" target='_blank'>了解智能系统<span class='icon-right'></span></a>
+        </div>
+    </div>
+
+    <div class="section summary-color-list">
+        <ul class="img-list J_colImgBlock" data-index='0'>
+            <li class='img-a current'></li>
+            <li class='img-b'></li>
+            <li class='img-c'></li>
+            <li class='img-e'></li>
+        </ul>
+        <ul class="nav-rect clearfix  J_colNav">
+            <li class='current img-a'>
+            </li>
+            <li class='img-b'></li>
+            <li class='img-c'></li>
+            <li class='img-e last'></li>
+        </ul>
+    </div>
+    <div class="section summary-version">
+        <ul class="ver-list clearfix">
+            <li class="li-ver">
+                <div class="ver-img"></div>
+                <h3 class="ver-tit">
+                    <span class='niu-num-font'>3999</span>元
+                </h3>
+            </li>
+            <li class="li-c">
+                <div class="ver-img"></div>
+                <h3 class="ver-tit">
+                    <span class='niu-num-font'>4699</span>元
+                </h3>
+            </li>
+            <li class="li-s">
+                <div class="ver-img"></div>
+                <h3 class="ver-tit">
+                    <span class='niu-num-font'>5699</span>元
+                </h3>
+            </li>
+            <li class="li-pro">
+                <div class="ver-img"></div>
+                <h3 class="ver-tit">
+                    <span class='niu-num-font'>6999</span>元
+                </h3>
+            </li>
+            <li class="li-txt">
+                <div class="ver-img"></div>
+                <h3 class="ver-tit">
+                    <a href="/m1/params">查看参数</a>
+                </h3>
+            </li>
+        </ul>
+    </div>
+    <div class="section section-monster m1-common">
+        <h2 class="title niu-font">
+            是贴地飞行还是探索更多角落？
+        </h2>
+        <h4 class="sub-title niu-font">
+            2档动力模式，更快或更远
+        </h4>
+        <p class="content">
+            在实际道路行驶中，你可以选择合适的动力模式，无论是追求速度的运动模式还是探索更远的节能模式，你将在骑行中体验到更多驾驶乐趣。
+        </p>
+        <div class="monster-img"></div>
+        <ul class="spces-list">
+            <li>
+                <h3 class="spe-title">
+                    <span class="num J_young niu-num-font">57</span><span class='unit'>KM</span>
+                </h3>
+                <p class="spe-cont">
+                    青春版
+                </p>
+            </li>
+            <li>
+                <h3 class="spe-title">
+                    <span class="num J_city niu-num-font">69</span> <span class='unit'>KM</span>
+                </h3>
+                <p class="spe-cont">
+                    都市版
+                </p>
+            </li>
+            <li>
+                <h3 class="spe-title ">
+                    <span class="num J_sport niu-num-font ">74</span><span class='unit'>KM</span>
+                </h3>
+                <p class="spe-cont">
+                    动力版
+                </p>
+            </li>
+            <li>
+                <h3 class="spe-title">
+                    <span class="num J_top niu-num-font">95</span><span class='unit'>KM</span>
+                </h3>
+                <p class="spe-cont">
+                    顶配版
+                </p>
+            </li>
+        </ul>
+        <div class="option-block clearfix">
+            <div class="option ">
+                <div class="df-block J_scrollChose">
+                    车速 <span class="space J_rate">20 KM/h</span> <span class='down'></span>
+                </div>
+                <ul class="list-block ">
+                    <li>
+                        20 KM/h
+                    </li>
+                    <li>
+                        35 KM/h
+                    </li>
+                    <li>
+                        45 KM/h
+                    </li>
+                </ul>
+            </div>
+            <div class="option ">
+                <div class="df-block J_scrollChose">
+                    载重 <span class="space J_kg">50 KG</span> <span class='down'></span>
+                </div>
+                <ul class="list-block ">
+                    <li>
+                        50 KG
+                    </li>
+                    <li>
+                        70 KG
+                    </li>
+                    <li>
+                        90 KG
+                    </li>
+                </ul>
+            </div>
+            <div class="option ">
+                <div class="df-block J_scrollChose">
+                    温度 <span class="space J_du">10 °</span> <span class='down'></span>
+                </div>
+                <ul class="list-block">
+                    <li>
+                        -10 °
+                    </li>
+                    <li>
+                        0 °
+                    </li>
+                    <li>
+                        10 °
+                    </li>
+                    <li>
+                        25 °
+                    </li>
+                    <li>
+                        40 °
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="info">
+            *以上数据为在理想状况下，连续不间断骑行所能达到的续航里程。小牛电动符合国家20KM/H 的限速要求。温度指电池包温度<br>
+            * 本页面中数据，如无特殊说明，均出自我司实验室测试。数据可能因客观环境改变，存在误差。
+        </p>
+        <p class="info ">
+        </p>
+    </div>
+    <div class="hide niu-num-font">0123456789.KM</div>
+</div>
+<div class="warn-info J_warnInfo">
+    <div class="warn-block">
+        * 续航受载重、温度、风速、路面情况等多种因素影响，120km为顶配版在骑行者65kg，温度20，20km/h的情况下，匀速不间断骑行的实测结果。Ｍ1青春版采用国产一线品牌动力电芯。8.2kg、120km为 M1 顶配版本的参数，其他型号的参数请阅读 <a href='/m1/params' target='_blank'>参数</a>。 电池加速充电需额外购买大功率充电器
+    </div>
+</div>
+
+<div class="vd-modal hide  J_vdModal" data-src='http://player.video.qiyi.com/2dcb110f28b0da39654acb0a437c68da/0/61/v_19rrloure4.swf-albumId=474056000-tvId=474056000-isPurchase=0-cnId=97-autoplay=1'>
+    <h2 class="modal-head">
+        <div class='modal-close J_modalClose'> </div>
+    </h2>
+    <iframe src="" frameborder="0" allowfullscreen="true" width="880" height="100%"></iframe>
+</div>
+<div class="modal-backdrop J_modalBack hide" style=""></div>
+
+
+
+<script>
+    function pyRegisterCvt() {
+
+    }
+</script>
+
+}
+<script type="text/javascript" src="~/Content/M1/js/bughd.min.js crossorigin=" anonymous"></script>
+@section FooterLink_Script{
+   
+<script type="text/javascript">
+    window.bughd = window.bughd || function () { };
+    bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+</script>
+<script type="text/javascript" src="~/Content/M1/js/common_00b45ee5.js"></script>
+<script type="text/javascript" src="~/Content/M1/js/scrollTarget_5f008e6e.js"></script>
+<script type="text/javascript" src="~/Content/M1/js/rockNum_c4671959.js"></script>
+<script type="text/javascript" src="~/Content/M1/js/common_7c2b2839.js"></script>
+<script type="text/javascript" src="~/Content/M1/js/util_4a0178fa.js"></script>
+<script type="text/javascript" src="~/Content/M1/js/index_22fac3d8.js"></script>
+
+<script type="text/javascript">
+    !function () {
+
+        require.async("common:widget/header2/header.js");
+        require.async("common:widget/headerCart/headerCart.js");
+        require.async("common:widget/headerUserStatus/headerUserStatus.js");
+    }();
+    !function () {
+        require.async('store:widget/products/m1/index.js', function (sm) {
+            var obj = {
+                imgurl: '//store.niucache.com/static/store/widget/products/m1/img/s-27_e318e470.jpg',
+                title: '好看又好用<br>就是 M1 的设计本源',
+                tag: '设计',
+                url: '/m1/design'
+            };
+            sm(obj);
+        });
+    }();
+    !function () {
+        require.async("common:widget/footer/footer.js");
+    }();</script>
+
+
+
+}
+
+    
+
+
+
+
+
+
+
+    
+   
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+@section HeadScript_Link{
+    <script>
+    (function () {
+        var userLang = (navigator.language || navigator.userLanguage).substr(0, 2);
+        var globalArray = ['en', 'de', 'fr', 'es', 'nl'];
+        var curLang = '';
+        for (var i in globalArray) {
+            if (userLang == globalArray[i]) {
+                curLang = userLang;
+            }
+        }
+        if (!curLang && userLang != 'zh') {
+            curLang = 'en';
+        }
+
+        var o = navigator.userAgent,
+        r = function (r) {
+            return o.indexOf(r) > -1
+        };
+
+        if ((r("Android") && r("Mobile") || r("iPhone") || r("iPod") || r("Symbian") || r("IEMobile") || r("MI PAD"))) {
+            if (curLang && curLang != "") {
+                location.href = "http://www.niu.com/" + curLang + '/m/';
+            } else {
+                location.href = "http://m.niu.com";
+            }
+        } else {
+            if (curLang && curLang != "") {
+                var search = location.search;
+                if (search.indexOf('f=') == -1) {
+                    location.href = "http://www.niu.com/" + curLang + '/';
+                }
+            }
+        }
+
+
+    })();
+</script>
+
+<!--[if lt IE 9]>
+    <script src="//www.niucache.com/static/common/static/common/lib/html5shiv_23e126e6.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="//www.niucache.com/static/common/common_87417f32.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/widget/index_body/index_body_2fc07f4a.css" />
+}
+@section HeadLink{
+    <link rel="stylesheet" id="header_links" type="text/css" href="//www.niucache.com/static/common/widget/header2/style_1eb974a3.css" />
+}
+
+@section Body{
+    
+<div class="slider">
+    <ul>
+        <li class="gridBox-link kv-tmall" data-type="link" data-target="/ac/11"></li>
+        <li class="gridBox-link kv-u1-1" data-type="link" data-target="/u1"></li>
+        <li class="gridBox-link kv4" data-type="video" data-target="http://player.video.qiyi.com/540be8e16a06854f2578adb142f32e88/0/77/v_19rrlourb0.swf-albumId=474056400-tvId=474056400-isPurchase=0-cnId=97-autoplay=1">
+            <div class="slidItem">
+                <div class="slidItem-content slid3-t">
+                    <a class="slidLinkBtn gridBox-link" href="javascript:;" data-type="video" data-target="http://player.video.qiyi.com/540be8e16a06854f2578adb142f32e88/0/77/v_19rrlourb0.swf-albumId=474056400-tvId=474056400-isPurchase=0-cnId=97-autoplay=1">观看产品影片<i class="icon-play"></i></a>
+                    <a href="javascript:;" id="indexSliderBaidutj-3" class="slidLinkBtn gridBox-link" data-type="link" data-target="http://store.niu.com/m1">立即购买<i class="icon-right"></i></a>
+                </div>
+            </div>
+        </li>
+        <li class="gridBox-link kv-1" data-type="link" data-target="http://store.niu.com/n1s">
+            <div class="slidItem">
+                <div class="slidItem-content slid-1-t">
+                    <img src="//www.niucache.com/static/common/widget/slider/slider/KV1N1S0825-1_27198195.png">
+                    <p class="slid-1-t2">120 公里超长续航 ／ 智能 APP 防盗 ／ 丢一台赔一台</p>
+                    <div class="slid1-t-3">
+                        <a href="javascript:;" class="slidLinkBtn gridBox-link slid-1-t4" data-type="link" data-target="http://store.niu.com/n1s">了解N1S<i class="icon-right"></i></a>
+                        <a href="javascript:;" class="slidLinkBtn gridBox-link slid-1-t5" data-type="link" data-target="http://store.niu.com/buy/n1s">立即购买<i class="icon-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<style>
+    .kv-tmall {
+        background-image: url("//www.niucache.com/static/common/widget/slider/slider/happyShopping_7621e92d.jpg");
+    }
+
+    .kv-u1-1 {
+        background-image: url("//www.niucache.com/static/common/widget/slider/slider/u1kvpc1_c0211bb6.jpg");
+    }
+
+    .kv-u1-2 {
+        background-image: url("//www.niucache.com/static/common/widget/slider/slider/u1kvpc2_29d1266c.jpg");
+    }
+
+    .kv-shui {
+        background-image: url("//www.niucache.com/static/common/widget/slider/slider/kv-shui_b3461539.jpg");
+    }
+</style>
+
+
+<section class="gridBox">
+    <ul>
+        <li>
+            <a class="gridBox-link" href="javascript:;" data-type="link" data-target="http://store.niu.com">
+                <div class="gridBoxItem gridBoxItem3"></div>
+                <h3>官方商城 配件上新</h3>
+                <p>满499元免运费</p>
+            </a>
+        </li>
+        <li>
+            <a class="gridBox-link" href="javascript:;" data-type="link" data-target="http://store.niu.com/m1/">
+                <div class="gridBoxItem gridBoxItem1"></div>
+                <h3>小牛电动M1 产品详情</h3>
+                <p>了解小牛电动M1出色的设计与全新科技</p>
+            </a>
+        </li>
+        <li>
+            <a class="gridBox-link" href="javascript:;" data-type="link" data-target="http://bbs.niu.com/thread-98975-1-1.html">
+                <div class="gridBoxItem gridBoxItem2"></div>
+                <h3>小牛电动使用教程完全手册</h3>
+                <p>从开箱验车到科学使用电池的讲解视频</p>
+            </a>
+        </li>
+        <li>
+            <a class="gridBox-link" href="javascript:;" data-type="link" data-target="/u1pro/">
+                <div class="gridBoxItem gridBoxItem4"></div>
+                <h3>小牛U1 PRO 产品详情</h3>
+                <p>漫画了解小牛电动U1 pro</p>
+            </a>
+        </li>
+    </ul>
+</section>
+<div class="video-mask hide"></div>
+<div class="video-content hide">
+    <embed class="video-content-embed" src="" quality="high" width="1140" height="640" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"></embed>
+    <span class="icon-cross video-content-close"></span>
+</div>
+
+}
+
+@section FooterLink_Script{
+<script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    window.bughd = window.bughd || function () { };
+    bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+</script>
+
+   <script type="text/javascript" src="//www.niucache.com/static/common/common_00b45ee5.js"></script>
+<script type="text/javascript" src="//www.niucache.com/static/home/widget/index_body/index_body_4d2efc4e.js"></script>
+
+<script type="text/javascript">
+    !function () {
+
+        require.async("common:widget/header2/header.js");
+        require.async("common:widget/headerCart/headerCart.js");
+        require.async("common:widget/headerUserStatus/headerUserStatus.js");
+    }();
+    !function () {
+        require.async("common:widget/slider/slider.js");
+    }();
+    !function () {
+        require.async("common:widget/sliderAction/sliderAction.js");
+    }();
+    !function () {
+        require.async("common:widget/footer/footer.js");
+    }();</script>
+
+}

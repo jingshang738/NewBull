@@ -1,0 +1,276 @@
+﻿@{
+    ViewBag.Title = "购物车 - 小牛电动";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "小牛电动 U1 － 小牛官网";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+
+
+
+@section HeadScript_Link{
+
+    <link rel="stylesheet" href="//www.niucache.com/static/common/common_87417f32.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/page/n1_06eac47d.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_aa8a69db.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/widget/shopping_cart/shopping_cart_2677d8db.css" />
+}
+
+@section HeadLink{
+
+
+<link rel="stylesheet" id="header_links" type="text/css" href="//www.niucache.com/static/common/widget/header2/style_1eb974a3.css" />
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+@section Niu_Header_C{
+   
+    <div class="niu-header-c">
+        <img class="img-loader" src="//www.niucache.com/static/common/widget/header2/images/logo_28139158.svg" />
+        <header class="niu-header ">
+            <div class="header-navCont">
+                <a href="http://www.niu.com"><div class="header-brand"></div></a>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav-collapse">
+                            <a href="javascript:;">小牛电动</a>
+                            <div class="collapse car-collapse">
+                                <div class="car-collapse-content">
+                                    <ul>
+                                        <li><a href="http://www.niu.com/u1" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/u1-header_d4ab9a16.jpg"><span>U1</span></a></li>
+                                        <li><a href="http://store.niu.com/m1" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/m1-header_1139524b.jpg"><span>M1</span></a></li>
+                                        <li><a href="http://store.niu.com/n1s" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/n1-header_d387c5e9.jpg"><span>N1S</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a target="_blank" href="http://store.niu.com">商城</a></li>
+                        <li class="header-nav-collapse">
+                            <a href="javascript:;">授权体验店</a>
+                            <div class="collapse expstore-collapse">
+                                <div class="expstore-collapse-content">
+                                    <ul>
+                                        <li><a href="http://service.niu.com/service/expstore/authorized" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/expstore1_0c44c6f4.jpg"><span>授权体验店</span></a></li>
+                                        <li><a href="http://service.niu.com/service/expstore/maintenance" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/expstore2_e1f47251.jpg"><span>服务维修中心</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-nav-collapse">
+                            <a target="_blank" href="http://www.niu.com/service/hall/">服务</a>
+                            <div class="collapse service-collapse">
+                                <div class="service-collapse-content">
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="http://www.niu.com/niucare">
+                                                <div class="service-collapse-content-icon service-care-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>NIU CARE</p>
+                                                    <p>保养计划</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.niu.com/niucover">
+                                                <div class="service-collapse-content-icon service-insurence-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>牛油保</p>
+                                                    <p>人车保险</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="http://service.niu.com/expstore/authorized">
+                                                <div class="service-collapse-content-icon service-locate-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>授权体验店</p>
+                                                    <p>查找线下服务</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a target="_blank" href="http://bbs.niu.com">社区</a></li>
+                        <li><a class="hundmilicon" target="_blank" href="http://hd.niu.com/1"><img src="//www.niucache.com/static/common/widget/header2/images/hundmilIcon2_3e23c8ba.png" title="一亿公里"></a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <ul class="header-link">
+                        <li class="header-link-item" id="head_menu_userstatus">
+                            <a href="javascript:;"><i class="icon-profile"></i></a>
+                        </li>
+                        <li class="header-link-item" id="head_menu_cartlist">
+                            <a target="_blank" href="http://www.niu.com/cart"><i class="icon-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <header class="niu-header-m">
+            <nav class="header-nav shadow J_headerNav">
+                <div class="header-nav-box">
+                    <div class="header-nav-menu">
+                        <div class="header-nav-menu-bread J_bread">
+                            <span class="header-nav-menu-bread-t">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                            <span class="header-nav-menu-bread-m">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                            <span class="header-nav-menu-bread-b">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <a class="header-nav-logo" href="https://m.niu.com">
+                        <span></span>
+                    </a>
+                    <a class="header-nav-user" href="https://m.niu.com/center/"><i class="icon-profile"></i></a>
+                    <a class="header-nav-cart" href="https://m.niu.com/cart/"><i class="icon-cart"></i></a>
+                </div>
+            </nav>
+            <div class="mheaderMenu-layer J_menuLayer">
+                <ul class="mheaderMenu-layer-list">
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay10" data-target="https://m.niu.com/n1s/">小牛电动 N1S</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay15" data-target="https://m.niu.com/m1/">小牛电动 M1</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay20" data-target="http://www.niu.com/u1/">小牛电动 U1</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay25" data-target="https://m.niu.com/store/">小牛商城</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay30" data-target="https://m.niu.com/niucover/">牛油保</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay35" data-target="http://bbs.niu.com/">社区</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay40" data-target="https://m.niu.com/expstore/">网点</li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    }
+
+    
+
+
+
+
+
+@section Body{
+    <section id="process1" class="shoppingprocess">
+        <div class="sp-content">
+            <ul class="process">
+                <li class="select1 pbtn">1.我的购物车</li>
+                <li class="select2 pbtn">2.填写订单信息</li>
+                <li class="select3 pbtn">3.完成支付</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="shoppingcart">
+        <div class="commodity">
+            <div class="captioncentent">
+                <ul class="caption">
+                    <li class="com-message">商品信息</li>
+                    <li class="com-pice">单价</li>
+                    <li class="com-count">数量</li>
+                    <li class="com-total">小计</li>
+                    <li class="com-total">操作</li>
+                </ul>
+            </div>
+
+
+
+
+            <ul class="com-item com-item-571" id="product_15098516749185450" data-id="15098516749185450">
+                <span class="com-select on com-select-571 icon-check" data-id="15098516749185450" data-skuid="571" data-ticket="" data-quantity="1" data-depotid="XN0001" data-price="3899.00"></span>
+                <li class="com-pic"><img src="https://www.niucache.com/api/img/sku/571?imageView2/2/w/500/"></li>
+
+
+                <li class="com-name">
+                    小牛电动NIU U1 动力蓝
+                </li>
+
+                <li class="com-pice">3899元</li>
+                <li class="com-count">
+                    <div class="countcontrol">
+                        <span class="countbtn subbtn" data-id="15098516749185450">-</span>
+                        <input readonly="readonly" type="text" value="1" class="countinput" autocomplete="off">
+                        <span class="countbtn addbtn" data-id="15098516749185450">+</span>
+                    </div>
+                </li>
+                <li class="com-total">3899.00元</li>
+                <span class="delcom delcom-571" data-id="15098516749185450" data-skuid="571"></span>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="comalltotal">
+            <span class="niu-btn-middle niu-btn-red goappy" id="goappy">下一步</span>
+            <span id="comalltotal">商品合计（不含运费）：3899.00元</span>
+        </div>
+
+    </section>
+
+
+
+    }
+
+
+
+@section FooterLink_Script{
+
+    <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="//www.niucache.com/static/common/common_00b45ee5.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_be0d9234.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/shopping_cart/shopping_cart_3ae61281.js"></script>
+    <script type="text/javascript">
+!function () {
+
+    require.async("common:widget/header2/header.js");
+    require.async("common:widget/headerCart/headerCart.js");
+    require.async("common:widget/headerUserStatus/headerUserStatus.js");
+}();
+        !function () {
+            require.async("home:widget/shopping_cart/shopping_cart.js");
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+    }

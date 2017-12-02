@@ -1,0 +1,171 @@
+﻿.buyCar.storeDetail {
+    position: relative;
+    min - height: 807px;
+    background: #fff;
+    background - image: -webkit - radial - gradient(circle farthest - corner at 100 % 0, #f5f5f5, #fff 40 % );
+    background - image: -moz - radial - gradient(circle farthest - corner at 100 % 0, #f5f5f5, #fff 40 % );
+    background - image: radial - gradient(circle farthest - corner at 100 % 0, #f5f5f5, #fff 40 % )
+}.buyCar.storeDetail.storeDetail - intro {
+    width: 1140px;
+    min - height: 655px;
+    padding: 95px 15px 60px;
+    margin: 0 auto
+}.buyCar.storeDetail.storeDetail - intro article {
+    float: left;
+    height: 655px;
+    width: 555px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options {
+    width: 495px;
+    height: 595px;
+    padding - left: 60px;
+    padding - top: 60px;
+    position: relative;
+    font - family: din,
+        'PingFang SC',
+        'Helvetica Neue',
+    Helvetica,
+        'Hiragino Sans GB',
+    STHeitiSC - Light,
+        'Microsoft YaHei',
+    Arial,
+    sans - serif
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - name {
+    text - align: left;
+    font - weight: 400;
+    color: #000;font-size:24px;height:32px;line-height:32px;margin:0}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-name>a{position:relative;float:right;margin-right:20px;font-size:14px;color:# a4a9ad
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - name > a i {
+    position: absolute;
+    right: -16px;
+    line - height: 36px;
+    font - size: 12px;
+    margin - left: 5px; - webkit - transition: all 200ms ease - out;
+    transition: all 200ms ease - out
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - name > a: hover i {
+    right: -20px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - des {
+    font - size: 14px;
+    line - height: 21px;
+    color: #df001f;
+    margin - bottom: 52px;
+    display: block
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - des strong {
+    color: #df001f;
+    margin - left: 10px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o {
+    display: block;
+    overflow: auto
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o dt,
+.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o dd {
+    display: block;
+    min - height: 36px;
+    line - height: 36px;
+    float: left;
+    margin - bottom: 15px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o dt {
+    width: 68px;
+    text - align: left;
+    font - size: 14px;
+    color: #a4a9ad
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o dd {
+    width: 400px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - price {
+    font - size: 28px;
+    color: #df001f;
+    font - weight: 700
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color {
+    height: 46px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span {
+    display: block;
+    float: left;
+    vertical - align: top;
+    width: 35px;
+    height: 35px;
+    border - radius: 4px;
+    border: solid 1px#d1d3d3;
+    margin - right: 10px;
+    margin - bottom: 10px;
+    cursor: pointer; - webkit - transition: box - shadow 200ms ease - out;
+    transition: box - shadow 200ms ease - out;
+    box - sizing: border - box
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span img {
+    width: 100 % ;
+    height: 100 %
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span: hover {
+    -webkit - filter: brightness(105 % );
+    filter: brightness(105 % );
+    box - shadow: 0 7px 12px 0 rgba(0, 0, 0, .2)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.active {
+    border: solid 2px #5c6670;-webkit-filter:brightness(105%);filter:brightness(105%);box-shadow:0 7px 12px 0 rgba(0,0,0,.2)}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-color>span.disabled{opacity:.65;-ms-filter:alpha(Opacity= 65);
+filter: alpha(Opacity = 65)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.w {
+    background - color: #fff
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.r {
+    background - color: #df001f
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.y {
+    background - color: #ffc918
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.g {
+    background - color: #53565a}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-color>span.lb{background-color:# 2DCCD3
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - color > span.p {
+    background - color: #840B55}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-version>span{height:36px;line-height:18px;display:block;float:left;padding:8px 14px;text-align:center;border:solid 1px # d1d3d3;
+    color: #5c6670;font-size:14px;border-radius:4px;margin-right:10px;margin-bottom:10px;cursor:pointer;box-sizing:border-box;-webkit-transition:border-color .2s ease-out;transition:border-color .2s ease-out}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-version>span:hover{border:solid 1px # 5c6670
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - version > span.active {
+    border: 2px solid #5c6670;padding:7px 13px}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-version>a{font-size:14px;color:# a4a9ad;
+    float: right
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - qty {
+    width: 70px;
+    height: 36px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - qty > input {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #5c6670;text-align:center;border-radius:4px}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-qty>span{float:left;width:18px;height:18px;margin-left:5px;cursor:pointer;border-radius:4px;-webkit-transition:all 200ms ease-out;transition:all 200ms ease-out}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-qty>span:hover{color:# 5c6670
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - service.niucoverCheck {
+    display: inline - block;
+    width: 18px;
+    height: 18px;
+    border - radius: 4px;
+    background - color: #fff;
+    border: solid 2px #5c6670;text-align:center;font-size:12px;line-height:18px;color:# fff;
+    cursor: pointer
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - o.storeDetail - intro - options - c - o - service.niucoverCheck.active {
+    color: #5c6670}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-o .storeDetail-intro-options-c-o-service>a{font-size:14px;color:# a4a9ad
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn {
+    margin - left: 68px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span {
+    display: inline - block;
+    height: 20px;
+    padding: 8px 15px;
+    text - align: center;
+    border - radius: 4px;
+    background - color: #df001f;
+    color: #fff;
+    line - height: 20px;
+    cursor: pointer; - webkit - transition: all 200ms ease - out;
+    transition: all 200ms ease - out
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span i {
+    margin - right: 8px
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span: hover {
+    box - shadow: 0 15px 30px 0 rgba(0, 0, 0, .2)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span: active {
+    box - shadow: 0 15px 30px 0 rgba(0, 0, 0, .2)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span.disabled {
+    cursor: default;
+    background - color: #A4A9AD;
+    opacity: .65; - ms - filter: alpha(Opacity = 65);
+    filter: alpha(Opacity = 65)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > span.disabled: hover {
+    box - shadow: 0 0 rgba(0, 0, 0, .2)
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - btn > a {
+    display: none;
+    font - size: 14px;
+    color: #5c6670;margin-left:20px}.buyCar .storeDetail .storeDetail-intro .storeDetail-intro-options .storeDetail-intro-options-c .storeDetail-intro-options-c-btn .storeDetail-intro-options-c-vourcher{color:# df001f;
+    display: inline - block
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - tips {
+    margin - left: 68px;
+    margin - top: 30px;
+    font - size: 14px;
+    color: #a4a9ad
+}.buyCar.storeDetail.storeDetail - intro.storeDetail - intro - options.storeDetail - intro - options - c.storeDetail - intro - options - c - tips span {
+    color: #5c6670}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-b{position:relative;width:100%;height:360px;color:# fff;
+    background: url( //store.niucache.com/static/store/widget/buy/u1/images/banner_deebdb7c.jpg) center no-repeat;background-size:cover}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-b>span{position:absolute;left:34%;top:152px;font-size:24px}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-b>a{position:absolute;left:34%;top:189px;font-size:18px;color:#fff}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-b>a>i{font-size:14px;color:#fff;line-height:20px;margin-left:5px;-webkit-transition:all 200ms ease-out;transition:all 200ms ease-out}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-b>a:hover>i{margin-left:10px}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt{padding:0 20px;padding-bottom:70px;width:1130px;margin:0 auto}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>h1{font-size:24px;line-height:32px;color:#212121;text-align:left;font-weight:400;margin:0;margin-top:70px}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>h1 span{font-size:18px;color:#5c6670;margin-left:5px}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>a{font-size:14px;color:#a4a9ad}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>a i{font-size:12px;margin-left:5px;-webkit-transition:all 200ms ease-out;transition:all 200ms ease-out}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>a:hover i{margin-left:8px}.buyCar .buyN1S-bottomImgs .buyN1S-bottomImgs-pt>img{width:750px;margin-left:307px;margin-top:10px}

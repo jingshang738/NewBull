@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>小牛电动</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="牛电官网网站提供牛电智能车及其周边产品的购买、售后、交流服务；也是电动车爱好者进行广泛交流、电动车产品评测、资讯分享和社交的社区">
+    <meta name="keywords" content="牛电科技、电动车、机车、智能车、电动车新闻、电动车社区、电动车导航、电动车评测、电动车资讯、李一男">
+    <link rel="shortcut icon" href="//www.niu.com/favicon.ico">
+    <style>
+body,html{width:100%;height:100%;overflow:hidden}canvas{position:absolute;top:0;left:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,time{display:block}iframe{border:none}ul{list-style-type:none}
+
+html,body{margin:0;padding: 0;height:100%;font:14px/1.5 "Microsoft YaHei", "微软雅黑";}
+a{text-decoration:none;}
+.error { width:566px;height:600px;margin:0 auto;text-align: center;padding-top: 130px; }
+
+.step2-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+}
+.p1 {
+    position: relative;
+    z-index: 1;
+}
+.p2 {
+    position: absolute;
+    left: 33px;
+    top: 215px;
+    -webkit-animation: zhuan2 0.4s linear infinite;
+    animation: zhuan2 0.4s linear infinite;
+    z-index: 1
+}
+.p3 {
+    position: absolute;
+    left: 353px;
+    top: 212px;
+    -webkit-animation: zhuan2 0.4s linear infinite;
+    animation: zhuan2 0.4s linear infinite;
+    z-index: 1
+}
+.p4 {
+    position: absolute;
+    left: 550px;
+    top: 0;
+    z-index: 2;
+    transition: left 1s ease-out;
+    -webkit-transition: left 1s ease-out;
+    display: none;
+}
+.p5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 680px){
+    .error { width:auto; padding-left: 20px; padding-right: 20px; }
+    .error img{ width: 100%; }
+}
+::-moz-selection{color:#ffffff;background:#dc3333}::selection{color:#ffffff;background:#dc3333}
+
+@-webkit-keyframes zhuan2{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes zhuan2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body >
+<script src="//www.niu.com/component/header/"></script>
+
+<div class="error"><a href="//www.niu.com/">
+    <img src="//download.niucache.com/static/error-page/404.jpg" style="margin: 0 auto;">
+</a></div>
+
+<!--
+<div class="step2-2">
+    <img class="p2" src="/error/img/step22-3.png" />
+    <img class="p3" src="/error/img/step22-4.png" />
+    <img class="p1" src="/error/img/step22-2.png" />
+    <img class="p5" src="/error/img/step22-6.png" />
+    <img class="p4" src="/error/img/step22-5.png" />
+</div>
+ -->
+
+<script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossOrigin="anonymous"></script>
+<script type="text/javascript">
+window.bughd = window.bughd || function(){};
+bughd("create", {key: "ec0399cd9efd19e4ed66a94c56fd4bc6"});
+bughd("notify", "404", location.href);
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?2bd5252f20d08f5e7ee0bafd52e1d2cb";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+﻿@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script>
+    (function(w){
+      var doc = w.document, docElem = doc.documentElement,
+        head = doc.getElementsByTagName("head")[0] || docElem,
+        linkEle = doc.getElementById('header_links');
+        linkEle.parentNode.removeChild(linkEle);
+        head.insertBefore(linkEle,head.lastChild);
+    })(window);
+    </script>
+    <script src="//account.niucache.com/static/common/static/common/lib/respond_b890fb80.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @section HeadScript_Link{
+    <!--[if lt IE 9]>
+    <script src="//account.niucache.com/static/account/static/common/lib/html5shiv_23e126e6.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="//account.niucache.com/static/account/common/common_92f0035f.css" />
+<link rel="stylesheet" href="//account.niucache.com/static/common/common_7239ed79.css" />
+<link rel="stylesheet" href="//account.niucache.com/static/account/widget/signup/pc/signup_d18aa22c.css" />
+
+}
+
+@section HeadLink{
+   
+<link rel="stylesheet" id="header_links" type="text/css" href="//account.niucache.com/static/common/widget/header2/style_56942c06.css" />
+
+}
+
+@section Body{
+    
+
+
+<section class="content">
+    <div class="c-signup">
+        <div class="niu-form-title"><span>快速注册</span></div>
+        <form action="/signup" method="post" role="form" id="signup_form">
+            <!-- <input type="hidden" name="_csrf" value="">  -->
+            <span class="niu-input niu-input-large niu-input-account">
+                <i></i>
+                <input type="text" id="account" name="account" value="" placeholder="请输入手机号" verify="mobiletel:!" msg="请输入正确的手机号码:请输入您的手机号">
+                <div class="disabled-box disabled-box-phone">
+                    <span class="niu-disabled-icon"></span>
+                    <span class="niu-tipmsg niu-tipmsg-account"></span>
+                </div>
+                <div class="tip-signup">
+                    <!-- <a class="niu-tipmsg-signup" href="/login">现在登录</a> -->
+                    <a class="tip-signup-show" href="/login">现在登录</a>
+                </div>
+            </span>
+            <div class="slideVerify"></div>
+            <div class="verify">
+                <span class="niu-input niu-input-middle niu-input-msg">
+                    <i></i>
+                    <input type="text" id="code" name="code" placeholder="短信验证码" verify="number:!" msg="验证码格式不正确:请输入验证码">
+                </span>
+                <a href="javascript:;" id="getvcode">
+                    <span class="niu-btn niu-btn-middle niu-btn-gray timer">重新发送</span>
+                </a>
+                <div class="disabled-box disabled-box-msg">
+                    <span class="niu-disabled-icon"></span>
+                    <span class="niu-tipmsg niu-tipmsg-msg"></span>
+                </div>
+            </div>
+            <span class="niu-input niu-input-large niu-input-pwd">
+                <i></i>
+                <input type="password" id="password" name="password" placeholder="请输入密码" verify="numandstr:!" msg="密码格式不正确:请输入密码">
+                <div class="disabled-box disabled-box-pwd">
+                    <span class="niu-disabled-icon"></span>
+                    <span class="niu-tipmsg niu-tipmsg-pwd"></span>
+                </div>
+            </span>
+            <span class="niu-input niu-input-large niu-input-repwd">
+                <i></i>
+                <input type="password" id="re_password" name="re_password" placeholder="请再次输入密码" verify="numandstr:!" msg="密码格式不正确:请确认密码">
+                <div class="disabled-box disabled-box-repwd">
+                    <span class="niu-disabled-icon"></span>
+                    <span class="niu-tipmsg niu-tipmsg-repwd"></span>
+                </div>
+            </span>
+            <span class="niu-input niu-input-large niu-input-email">
+                <i></i>
+                <input id="email" name="email" type="text" placeholder="请输入电子邮箱（选填）" verify="email:" msg="邮箱格式不正确">
+                <div class="disabled-box disabled-box-email">
+                    <span class="niu-disabled-icon"></span>
+                    <span class="niu-tipmsg niu-tipmsg-email"></span>
+                </div>
+            </span>
+            <div class="protocol clearfix">
+                <input class="niu-checkbox" type="checkbox" name="protocol" id="protocol" checked="checked">
+                <label class="niu-checkbox-lable" for='protocol'>已阅读并同意注册&nbsp;<a class="protocol-link" href="/protocol">用户协议</a></label>
+                <a href="/login" class="login-link" target="_blank">账号登录></a>
+            </div>
+
+        </form>
+        <button class="niu-btn niu-btn-large niu-btn-red" id="signup_btn">完成注册</button>
+    </div>
+</section>
+
+
+
+<script type="text/javascript" src="https://api.geetest.com/get.php"></script>
+
+}
+
+
+@section FooterLink_Script{
+
+   <script type="text/javascript" src="//account.niucache.com/static/common/common_00b45ee5.js"></script>
+<script type="text/javascript">require.resourceMap({ "res": { "account:widget/signup/signup.js": { "url": "//account.niucache.com/static/account/widget/signup/signup_383ba4aa.js", "deps": ["account:widget/common/utils.js", "account:widget/common/init.js"] } }, "pkg": {} });</script>
+<script type="text/javascript" src="//account.niucache.com/static/common/static/common/js/page_d27dd519.js"></script>
+<script type="text/javascript" src="//account.niucache.com/static/account/common/account_0a39d777.js"></script>
+<script type="text/javascript" src="//account.niucache.com/static/account/static/common/js/niu-plugin_2fbad12b.js"></script>
+<script type="text/javascript">
+    !function () {
+
+        require.async("common:widget/header2/header.js");
+        require.async("common:widget/headerCart/headerCart.js");
+        require.async("common:widget/headerUserStatus/headerUserStatus.js");
+    }();
+    !function () {
+        require.async("account:widget/signup/signup.js");
+    }();
+    !function () {
+        require.async("common:widget/footer/footer.js");
+    }();</script>
+
+
+
+
+    }
+
+
+@section Bottom_Script{
+
+
+    @*前台短信验证码功能 ajax实现异步处理 （发送和校验）*@
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?2bd5252f20d08f5e7ee0bafd52e1d2cb";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    var _vds = _vds || []; window._vds = _vds; (function () { _vds.push(["setAccountId", "84188db5ccd9510f"]); (function () { var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = ("https:" == document.location.protocol ? "https://" : "http://") + "dn-growing.qbox.me/vds.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(b, a) })() })();
+</script>
+<script type='text/javascript'>
+    (function (a, b, c, d) {
+        a[c] = function () { a[c]['ar'] = a[c]['ar'] || []; a[c]['ar'].push(arguments); };
+        var s = b.createElement('script'); s.async = 1; s.src = '//t.agrantsem.com/js/agt.js';
+        var r = b.getElementsByTagName('script')[0]; r.parentNode.insertBefore(s, r);
+    })(window, document, '_agtjs', 'script');
+    _agtjs('init', 'AG_521723_RRTO', 'niu.com');
+    _agtjs('trackPv');
+</script>
+
+
+    }
+
+@*<script type="text/javascript">
+
+
+    var InterValObj; //timer变量，控制时间
+    var count = 60; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+    function sendMessage() {
+        curCount = count;
+        // 设置button效果，开始计时
+        document.getElementById("btnSendCode").setAttribute("disabled", "true");//设置按钮为禁用状态
+        document.getElementById("btnSendCode").value = "请在" + curCount + "后再次获取";//更改按钮文字
+        InterValObj = window.setInterval(SetRemainTime, 1000); // 启动计时器timer处理函数，1秒执行一次
+        // 向后台发送处理数据
+        $.ajax({
+            type: "POST", // 用POST方式传输
+            dataType: "text", // 数据格式:JSON
+            url: "forgetPasswdServlet", // 目标地址
+            data: "flag=2",
+            success: function (data) {
+                data = parseInt(data, 10);
+                if (data == 1) {
+                    $("#jbPhoneTip").html("<font color='#339933'>√ 短信验证码已发到您的手机,请查收</font>");
+                } else if (data == 0) {
+                    $("#jbPhoneTip").html("<font color='red'>× 短信验证码发送失败，请重新发送</font>");
+                }
+            }
+        });
+    }
+
+    //timer处理函数
+
+    function SetRemainTime() {
+        if (curCount == 0) {
+            window.clearInterval(InterValObj);// 停止计时器
+            document.getElementById("btnSendCode").removeAttribute("disabled");//移除禁用状态改为可用
+            document.getElementById("btnSendCode").value = "重新发送验证码";
+        } else {
+            curCount--;
+            document.getElementById("btnSendCode").value = "请在" + curCount + "秒后再次获取";
+        }
+    }
+
+    //验证短信验证码
+    function doCompare() {
+
+        var codelast = document.getElementById("codelast").value;//获取输入的验证码
+        if (codelast == null || codelast == '') {
+            alert("验证码不能为空！");
+        } else {
+
+            $.ajax({
+                type: "POST", // 用POST方式传输
+                dataType: "text", // 数据格式:JSON
+                url: "forgetPasswdServlet", // 目标地址
+                data: "flag=4&codelast=" + codelast,
+                success: function (data) {
+                    data = parseInt(data, 10);
+                    if (data == 1) {
+                        window.location.href = '/aoyi/forgetpasswd/forgetpasswd3.jsp';//验证成功
+                    } else if (data == 0) {
+                        $("#jbPhoneTip").html("<font color='red'>×短信验证码不正确请重新输入</font>");
+                    } else if (data == 2) {
+                        $("#jbPhoneTip").html("<font color='red'>×验证码已失效请重新获取验证码</font>");
+                    }
+                }
+            });
+        }
+    }
+
+</script>*@
+
+
+
+
+
+

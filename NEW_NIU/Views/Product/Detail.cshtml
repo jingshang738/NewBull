@@ -1,0 +1,267 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+    int pid = ViewBag.id;
+    N_Admin.Models.N_Product p = new N_Admin.Models.N_Product();
+    N_Admin.Models.N_Option o = new N_Admin.Models.N_Option();
+    N_Admin.Models.N_OptionImage img = new N_Admin.Models.N_OptionImage();
+    N_Admin.Models.N_Sku s = new N_Admin.Models.N_Sku();
+    N_Admin.Models.N_Description d = new N_Admin.Models.N_Description();
+}
+
+
+@section HeadScript_Link{
+
+
+
+    <script>
+        var o = navigator.userAgent,
+        r = function (r) {
+            return o.indexOf(r) > -1
+        };
+        if ((r("Android") && r("Mobile") || r("iPhone") || r("iPod") || r("Symbian") || r("IEMobile") || r("MI PAD"))) {
+            location.href = "http://m.niu.com/store/detail/";
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="//store.niucache.com/static/common/static/common/lib/html5shiv_23e126e6.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//store.niucache.com/static/common/common_6c4817c9.css" />
+    <link rel="stylesheet" href="//store.niucache.com/static/common/static/niucontrol/niucontrol_06eac47d.css" />
+    <link rel="stylesheet" href="//store.niucache.com/static/store/widget/store/detail/index_7f533c99.css" />
+    <link rel="stylesheet" href="//store.niucache.com/static/store/widget/widgets/productImgView/productImgView_00d88acb.css" />
+}
+
+
+
+
+@section HeadLink{
+
+
+
+
+ <link href="/Content/style_6965f5af.css" rel="stylesheet" />
+    }
+
+    <!--[if lt IE 9]>
+    <script>
+    (function(w){
+      var doc = w.document, docElem = doc.documentElement,
+        head = doc.getElementsByTagName("head")[0] || docElem,
+        linkEle = doc.getElementById('header_links');
+        linkEle.parentNode.removeChild(linkEle);
+        head.insertBefore(linkEle,head.lastChild);
+    })(window);
+    </script>
+    <script src="//store.niucache.com/static/common/static/common/lib/respond_b890fb80.js"></script>
+    <![endif]-->
+
+
+
+@section Body{
+
+
+
+
+    <section class="storeDetail">
+        <div class="storeDetail-intro">
+            <article class="storeDetail-intro-view J_bigImgBlock">
+
+
+                <article class="storeDetail-intro-view J_bigImgBlock">
+                    <div class="storeDetail-intro-view-bigImg">
+                        <ul>
+
+
+                            @foreach (string item in img.GetAllImage(pid))
+                            {
+                                <li>
+                                    <div class="img-box" style='padding: 1px;'>
+                                        <img src="@item" alt="" class="img-rounded" />
+
+                                    </div>
+                                </li>
+                            }
+
+
+
+
+                        </ul>
+                    </div>
+                </article>
+
+
+            </article>
+            <article class="storeDetail-intro-options">
+                <p class="name" id="productName">@p.GetProduct(pid).name</p>
+                <div class="countBox">
+                    <div class="selectOption clearfix">
+                        <p class="optionTit">价格</p>
+                        <dl class="countBox-price clearfix">
+
+
+                            <dd class="J_storeDetailPrice">￥@s.GetDefaultQuantity(pid).salePrice</dd>
+
+
+
+                        </dl>
+                    </div>
+                    @*N_Admin.Models.OptionValueIdM*@
+                    @foreach (string n in o.GetAllNameByPro(pid))
+                    {
+                          <div class="selectOption clearfix js-option">
+                        <p class="optionTit">@n</p>
+                              <dl class="J_optionContent0 optionBorder clearfix" data-option="@n">
+                                  @foreach (N_Admin.Models.OptionValueIdM it in o.GetAllValuesByName(n,pid))
+                                  {
+                                      <dd data-option="@n" class="J_storeDetailOptions optionList" optionid="@it.optionId" >@it.optionValues</dd>
+                                  }
+                                  
+
+                              </dl>
+                    </div>
+                    }
+                  
+
+
+                    <div class="selectNum clearfix">
+                        <p class="selectNumTit">数量</p>
+                        <div class="numBox">
+                            <span class="J_subQty">-</span>
+                            <input class="J_qty" type="text" value="1" />
+                            <span class="J_addQty">+</span>
+                        </div>
+                    </div>
+                    @*<div class="selectNum clearfix">
+                        <p class="selectNumTit">库存</p>
+                        <div class="numBox" style="text-align:center;">
+                 
+                            <input class="J_qty" type="text" value="@s.GetDefaultQuantity(pid).quantity" />
+                           
+                        </div>
+                    </div>*@
+                    <br />
+                    <div class="selectOption clearfix js-option">
+                        <p class="optionTit">库存</p>
+                        <dl class="J_optionContent0 optionBorder clearfix" data-option="库存">
+
+                            <dd data-option="库存" class="J_storeDetailOptions optionList">@s.GetDefaultQuantity(pid).quantity</dd>
+
+
+
+                        </dl>
+                    </div>
+
+                </div>
+                @*<div class="J_addCart joinCarBtn disabled">
+                    <span class="icon-cart"></span>loading
+                </div>*@
+                <div class="J_addCart joinCarBtn"><i class="icon-cart"></i> 加入购物车</div>
+                <div class="storeDetail-intro-options-tips">
+
+                    <p class="tips-title">全场配件满499元包邮。</p>
+
+
+                    <p>客服电话400-6388-666，周一至周日7:00-21:00</p>
+                    <p>(仅收市话费)。</p>
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <div id="details">
+        <div class="miniNavBorder-innter">
+            <div class="miniNavBorder" id="miniNavBorder">
+                <ul class="miniNav clearfix">
+             @foreach (var item in d.GetAll(pid))
+            {
+                    <li class="miniNavList"><a href="#@item.descriptionType">@item.title</a>
+                    </li>
+     
+            }
+                   
+
+                </ul>
+            </div>
+        </div>
+
+        <ul class="content">
+            @foreach (var item in d.GetAll(pid))
+            {
+                 <li class="active contentList" data-des>
+                     <a id="@item.descriptionType" name="@item.descriptionType"></a>
+         @Html.Raw(item.description)
+            </li>
+            }
+           
+
+        </ul>
+
+    </div>
+
+}
+
+@section FooterLink_Script{
+
+
+
+
+ 
+
+
+
+
+
+    <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="//store.niucache.com/static/common/common_00b45ee5.js"></script>
+    <script type="text/javascript" src="//store.niucache.com/static/common/widget/plugin/remote/remote_cdf6d669.js"></script>
+    <script type="text/javascript" src="//store.niucache.com/static/store/widget/store/cart_05ba30e2.js"></script>
+    <script type="text/javascript" src="//store.niucache.com/static/store/widget/store/detail/lazyload2_391fdb78.js"></script>
+    <script type="text/javascript" src="//store.niucache.com/static/store/widget/store/detail/index_694a5f84.js"></script>
+    <script type="text/javascript" src="//store.niucache.com/static/store/widget/widgets/productImgView/productImgView_28bd4b1f.js"></script>
+    <script type="text/javascript">
+!function () {
+
+    require.async("common:widget/header2/header.js");
+    require.async("common:widget/headerCart/headerCart.js");
+    require.async("common:widget/headerUserStatus/headerUserStatus.js");
+}();
+        !function () {
+            require.async("store:widget/widgets/productImgView/productImgView.js");
+        }();
+        !function () {
+
+            /*require.async("store:widget/store/detail/index.js", function (pageDetail) {
+                pageDetail.init({
+                    parent: "J_productImg",
+                    urls: ["https://img.niucache.com/5B29E0671E0F417FB2FD791BB9CB0444.jpg", "https://img.niucache.com/C03752A1496C4A598B0DBE4CF518D295.jpg", "https://img.niucache.com/DA8287792AB64932874768BAB9CE6F26.jpg", "https://img.niucache.com/278B84D8439C4796B2DA616F4386A099.jpg"],
+                    product: { "spuId": 161, "name": "小牛电动 N系列专用腿挡", "productPriceLowest": 369, "productPriceHighest": 369 },
+                    skus: [{ "skuId": 675, "skuNumber": "55013201", "name": "小牛电动 N系列专用腿挡", "price": { "salePrice": 369, "retailPrice": 369 }, "fulfillmentType": "SHUNFENG1", "options": { "颜色": "黑色" }, "颜色": "黑色" }],
+                    description: [{ "title": "商品介绍", "descriptionType": "INTRODUCTION", "description": "<p><img data-src=\"http://img.niucache.com/F6A1759C650B44BFBE2F51528AC28A9E.jpg\" style=\"\"/></p><p><img data-src=\"http://img.niucache.com/7ED4076E5EDB4658B6373B659BB40686.jpg\" style=\"white-space: normal;\"/><img data-src=\"http://img.niucache.com/8E39463595D5466B91741395195B6DEF.jpg\" style=\"\"/></p><p><img data-src=\"http://img.niucache.com/07CCEE2939AE4C1C88CCADC34E6A3A77.jpg\" style=\"\"/></p><p><img data-src=\"http://img.niucache.com/5079A42F404F4A83B44A8386321A8151.jpg\" style=\"\"/></p><p><img data-src=\"http://img.niucache.com/3EE9FBB0ABBE4F0ABFC3F533F5B1F864.jpg\" style=\"\"/></p><p><img data-src=\"http://img.niucache.com/6DD0BCC358D34B6C90F60BFF11DDDBCB.jpg\"/><br/></p>" }, { "title": "详细参数", "descriptionType": "PARAMETERS", "description": "" }, { "title": "售后政策", "descriptionType": "AFTERPOLICY", "description": "" }],
+                    optionImagesList: { "optionName": "颜色", "defaultList": ["https://img.niucache.com/5B29E0671E0F417FB2FD791BB9CB0444.jpg", "https://img.niucache.com/C03752A1496C4A598B0DBE4CF518D295.jpg", "https://img.niucache.com/DA8287792AB64932874768BAB9CE6F26.jpg", "https://img.niucache.com/278B84D8439C4796B2DA616F4386A099.jpg"], "list": { "黑色": ["https://img.niucache.com/5B29E0671E0F417FB2FD791BB9CB0444.jpg", "https://img.niucache.com/C03752A1496C4A598B0DBE4CF518D295.jpg", "https://img.niucache.com/DA8287792AB64932874768BAB9CE6F26.jpg", "https://img.niucache.com/278B84D8439C4796B2DA616F4386A099.jpg"] } },
+                    options: [{ "optionName": "颜色", "optionValues": ["黑色"] }],
+                    mainOption: "",
+                    defaultSku: { "skuId": 675, "skuNumber": "55013201", "name": "小牛电动 N系列专用腿挡", "price": { "salePrice": 369, "retailPrice": 369 }, "fulfillmentType": "SHUNFENG1", "options": { "颜色": "黑色" }, "颜色": "黑色" },
+                    ncode: ''
+                })
+            });*/
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+}
+
+
+
+
+
+
+
+

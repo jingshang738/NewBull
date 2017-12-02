@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "服务维修中心 - 小牛电动";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+@section HeadScript_Link{
+
+
+    <!--[if lt IE 9]>
+        <script src="//service.niucache.com/static/common/static/common/lib/html5shiv_23e126e6.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//service.niucache.com/static/common/common_66afa903.css" />
+    <link rel="stylesheet" href="/static/service/widget/expstore/maintenance/index_a68b025e.css" />
+}
+
+
+
+
+@section HeadLink{
+
+
+
+    <link rel="stylesheet" id="header_links" type="text/css" href="//service.niucache.com/static/common/widget/header2/style_5aff1c8e.css" />
+    }
+
+    <!--[if lt IE 9]>
+    <script>
+    (function(w){
+      var doc = w.document, docElem = doc.documentElement,
+        head = doc.getElementsByTagName("head")[0] || docElem,
+        linkEle = doc.getElementById('header_links');
+        linkEle.parentNode.removeChild(linkEle);
+        head.insertBefore(linkEle,head.lastChild);
+    })(window);
+    </script>
+    <script src="//service.niucache.com/static/common/static/common/lib/respond_b890fb80.js"></script>
+    <![endif]-->
+
+
+
+
+@section Body{
+
+    <div class="main">
+        <div class="auth-banner">
+            <div class="auth-banner-c">
+                <p class="p1">服务维修中心</p>
+                <p class="p2">查找维修中心</p>
+                <div class="searchBox icon-search">
+                    <input id="searchKey" type="text" placeholder="请输入您要搜索的城市">
+                </div>
+            </div>
+        </div>
+
+        <div class="J_searchCont main-list"></div>
+
+        <div class="auth-foot">
+            <div class="auth-foot-l">
+                <a href="/expstore/apply.html" class="link1">加盟授权体验店</a>
+                <a href="/service/expstore/all" class="link2 icon-right">查看全部线下门店</a>
+            </div>
+            <img src="/static/service/widget/expstore/maintenance/images/img4_ad2afc5b.png">
+        </div>
+    </div>
+    <div id="container" style="display: none;"></div>
+    <script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=554481b4d81d2abc7e4ff42a28032d2e"></script>
+
+}
+
+
+
+
+
+
+@section FooterLink_Script{
+
+    <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="//service.niucache.com/static/common/common_00b45ee5.js"></script>
+    <script type="text/javascript" src="//service.niucache.com/static/common/widget/plugin/remote/remote_cdf6d669.js"></script>
+    <script type="text/javascript" src="/static/service/widget/expstore/maintenance/index_75de2027.js"></script>
+    <script type="text/javascript">
+!function () {
+
+    require.async("common:widget/header2/header.js");
+    require.async("common:widget/headerCart/headerCart.js");
+    require.async("common:widget/headerUserStatus/headerUserStatus.js");
+}();
+        !function () {
+            require.async('service:widget/expstore/maintenance/index.js');
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+}
+
+
+
+
+
+
+
+

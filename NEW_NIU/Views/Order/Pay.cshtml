@@ -1,0 +1,306 @@
+﻿@{
+    ViewBag.Title = "Pay";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+@section HeadScript_Link{
+<!--[if lt IE 9]>
+    <script src="//www.niucache.com/static/common/static/common/lib/html5shiv_23e126e6.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="//www.niucache.com/static/common/common_87417f32.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/page/n1_06eac47d.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_aa8a69db.css" />
+<link rel="stylesheet" href="//www.niucache.com/static/home/widget/order_pay/order_pay_a01c2c3e.css" />
+
+}
+
+
+@section HeadLink{
+    <link rel="stylesheet" id="header_links" type="text/css" href="//www.niucache.com/static/common/widget/header2/style_1eb974a3.css" />
+ }
+ 
+
+    <!--[if lt IE 9]>
+    <script>
+    (function(w){
+      var doc = w.document, docElem = doc.documentElement,
+        head = doc.getElementsByTagName("head")[0] || docElem,
+        linkEle = doc.getElementById('header_links');
+        linkEle.parentNode.removeChild(linkEle);
+        head.insertBefore(linkEle,head.lastChild);
+    })(window);
+    </script>
+    <script src="//www.niucache.com/static/common/static/common/lib/respond_b890fb80.js"></script>
+    <![endif]-->
+
+
+
+
+
+@section Body
+{
+
+
+    <section id="process3" class="shoppingprocess">
+        <div class="sp-content">
+            <ul class="process">
+                <li class="select1 pbtn">1.我的购物车</li>
+                <li class="select2 pbtn">2.填写订单信息</li>
+                <li class="select3 pbtn">3.完成支付</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="order-pay top">
+        <div class="order-status">
+            <span class="order-status-money">费用总计：1664.00元</span>
+            <div class="order-status-info">
+                <span class="order-status-info-status">等待付款</span>
+
+
+            </div>
+
+            <!--<div class="openCart">-->
+            <!--<span>订单详情</span><img src="icon-down.png">-->
+            <!--</div>-->
+        </div>
+
+        <div class="choose">
+            选择支付方式
+        </div>
+        <div class="order-way">
+            <span class="otherpaybtn">切换支付方式</span>
+
+            <div class="order-way-block payfor-zfbpc" data-channel="alipay_pc_direct" data-msg="">
+                <div class="payicon">
+                    <img src="//www.niucache.com/static/home/widget/order_pay/zhifubao2_b09280b8.png">
+                </div>
+                <div class="payfont">
+                    <p>支付宝 网页支付</p>
+                    <p class="payfont-t">登录网页版支付宝支付</p>
+                </div>
+            </div>
+            <div class="order-way-block payfor-wechat" data-channel="wx_pub_qr" data-msg="请打开手机微信客户端扫描二维码">
+                <div class="payicon">
+                    <img src="//www.niucache.com/static/home/widget/order_pay/wechat_94ec50b3.png">
+                </div>
+                <div class="payfont">
+                    <p>微信 扫码支付</p>
+                    <p class="payfont-t">使用微信手机客户端支付</p>
+                </div>
+                <div class="order-pay-dcode" id="J_weixin">
+                    <img class="loadinggif" src="//www.niucache.com/static/home/static/common/images/loading_f9473568.gif">
+                    <span class="arrow-left">
+                        <i></i>
+                    </span>
+                </div>
+            </div>
+            <div class="order-way-block payfor-jd" data-channel="jdpay" data-msg="">
+                <div class="payicon">
+                    <img src="//www.niucache.com/static/home/widget/order_pay/jdpay_fd9afe79.jpg">
+                </div>
+                <div class="payfont">
+                    <p>京东支付</p>
+                    <p class="payfont-t">使用京东支付支付</p>
+                </div>
+            </div>
+
+            <div class="order-otherpay">
+                <h3 class="paytext">请打开手机微信客户端扫描二维码</h3>
+                <div class="payend">
+                    <span id="J_applyend" class="niu-btn niu-btn-red niu-btn-middle goorder">已完成付款</span>
+                    <span id="J_problem" class="niu-btn niu-btn-gray niu-btn-middle goorder">付款遇到问题</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--<section class="shopping-address">-->
+    <!-- -->
+    <!--</section>-->
+    <section class="order-pay bottom">
+        <div class="title">
+            <div class="title_meaasge">商品信息</div>
+            <div class="title_price">单价</div>
+            <div class="title_num">数量</div>
+            <div class="title_total">小计</div>
+        </div>
+        <div class="cartBox">
+
+            <ul class="cartItem">
+                <li class="cartItem-img">
+                    <img src="https://www.niucache.com/api/img/sku/666?imageView2/2/w/500/">
+                </li>
+
+                <li class="cartItem-name">
+                    <div class="cartItem-name-c">
+                        <p>GIVI B27 尾箱</p>
+                        <p class="subhead">GIVI B27 尾箱</p>
+                    </div>
+                </li>
+
+                <li class="cartItem-price">
+                    499元
+                </li>
+
+                <li class="cartItem-num">×1</li>
+                <li class="cartItem-totalprice">499元</li>
+
+            </ul>
+
+            <ul class="cartItem">
+                <li class="cartItem-img">
+                    <img src="https://www.niucache.com/api/img/sku/586?imageView2/2/w/500/">
+                </li>
+
+                <li class="cartItem-name">
+                    <div class="cartItem-name-c">
+                        <p>U1 TRELOCK 折叠锁 FS300</p>
+                        <p class="subhead">U1 TRELOCK 折叠锁 FS300</p>
+                    </div>
+                </li>
+
+                <li class="cartItem-price">
+                    328元
+                </li>
+
+                <li class="cartItem-num">×1</li>
+                <li class="cartItem-totalprice">328元</li>
+
+            </ul>
+
+            <ul class="cartItem">
+                <li class="cartItem-img">
+                    <img src="https://www.niucache.com/api/img/sku/432?imageView2/2/w/500/">
+                </li>
+
+                <li class="cartItem-name">
+                    <div class="cartItem-name-c">
+                        <p>NIU  多用途针织风巾</p>
+                        <p class="subhead">NIU  多用途针织风巾</p>
+                    </div>
+                </li>
+
+                <li class="cartItem-price">
+                    99元
+                </li>
+
+                <li class="cartItem-num">×4</li>
+                <li class="cartItem-totalprice">396元</li>
+
+            </ul>
+
+            <ul class="cartItem">
+                <li class="cartItem-img">
+                    <img src="https://www.niucache.com/api/img/sku/502?imageView2/2/w/500/">
+                </li>
+
+                <li class="cartItem-name">
+                    <div class="cartItem-name-c">
+                        <p>NIU N系列纪念款 金属 钥匙扣  白  均码</p>
+                        <p class="subhead">NIU N系列纪念款 金属 钥匙扣  白  均码</p>
+                    </div>
+                </li>
+
+                <li class="cartItem-price">
+                    49元
+                </li>
+
+                <li class="cartItem-num">×9</li>
+                <li class="cartItem-totalprice">441元</li>
+
+            </ul>
+
+            <div class="cartBox-bottom">
+                <span class="order"> 订单单号：2019003815537236</span>
+                <span class="num">共计15件商品</span>
+                <span class="sum">商品合计：1664.00元</span>
+                <span class="address">
+
+                    收货信息：徐维，中国广东广州市荔湾区南岸路63城启大厦，联系电话：15623846895
+                </span>
+                <span class="ship">配送费用：0.00元</span>
+
+                <p class="bill">发票抬头：徐维</p>
+
+                <p class="total">费用总计：1664.00 元</p>
+            </div>
+        </div>
+    </section>
+    <section class="order-pay">
+        <div class="problem" id="problem" name="problem">
+            <h1>付款遇到问题了？先看看是不是由于下面的原因。</h1>
+            <dl>
+                <dt>问：是否可以货到付款？</dt>
+                <dd>答：目前暂不支持货到付款。</dd>
+                <dt>问：订单是否可以分开支付？</dt>
+                <dd>答：订单金额只能一次性支付，不能分开支付。</dd>
+                <dt>问：在线支付后，系统提示已经支付成功，订单显示未支付怎么办？</dt>
+                <dd>答：如确认已经支付成功并账户扣款，但订单状态没有变化，可能是支付平台数据没有及时同步到预订官网，请您稍后刷新页面查看订单状态，或及时联系客服处理。</dd>
+                <dt>问：官网购买手机支持哪些支付方式？</dt>
+                <dd>答：官网购买目前只支持在线支付，包括支付宝、微信支付</dd>
+                <dt>问：如何查询订单状态？</dt>
+                <dd>答：请您使用下单的账户登录niu.com官网，在个人中心中查看。</dd>
+                <dt>问：订单取消后退款什么时候到账？</dt>
+                <dd>答：退款周期约为 3-20 个工作日（支付宝为 3-10 个工作日；微信为 2-5 个工作日；银联为 7-20 个工作日；招行分期为 3-20 个工作日）。</dd>
+            </dl>
+        </div>
+    </section>
+
+    <div class="qrmask"></div>
+    <div class="largeQrcode">
+        <div class="bigQrcodeContent">
+
+        </div>
+    </div>
+
+
+}
+
+
+
+    }
+
+@section FooterLink_Script{
+
+
+
+
+    <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="//www.niucache.com/static/common/common_00b45ee5.js"></script>
+    @*<script type="text/javascript">require.resourceMap({ "res": { "home:widget/order_pay/time.js": { "url": "//www.niucache.com/static/home/widget/order_pay/time_f76d4601.js" } }, "pkg": {} });</script>*@
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_be0d9234.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/order_pay/order_pay_5b96e8ff.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/static/common/lib/jquery.qrcode.min_a989a5fb.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/static/pay/pingpp_57f2d59b.js"></script>
+    <script type="text/javascript">
+        !function () {
+
+            require.async("common:widget/header2/header.js");
+            require.async("common:widget/headerCart/headerCart.js");
+            require.async("common:widget/headerUserStatus/headerUserStatus.js");
+        }();
+        !function () {
+            require.async("home:widget/order_pay/order_pay.js");
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+}
+
+
+
+
+
+
+
+
+
+
+

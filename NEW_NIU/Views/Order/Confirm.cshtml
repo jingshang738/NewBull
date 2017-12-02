@@ -1,0 +1,547 @@
+﻿@{
+    ViewBag.Title = "提交订单 - 小牛电动";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.8.2.js"></script>
+@section HeadScript_Link{
+
+
+
+
+    <!--[if lt IE 9]>
+        <script src="//www.niucache.com/static/common/static/common/lib/html5shiv_23e126e6.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//www.niucache.com/static/common/common_87417f32.css" />
+    <link rel="stylesheet" href="//www.niucache.com/static/home/page/n1_06eac47d.css" />
+    <link rel="stylesheet" href="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_aa8a69db.css" />
+    <link rel="stylesheet" href="//www.niucache.com/static/home/widget/shopping_confirm/shopping_confirm_532623df.css" />
+}
+
+
+
+
+@section HeadLink{
+
+
+    <link rel="stylesheet" id="header_links" type="text/css" href="//www.niucache.com/static/common/widget/header2/style_1eb974a3.css" />
+}
+
+@section Niu_Header_C{
+    <div class="niu-header-c">
+        <img class="img-loader" src="//www.niucache.com/static/common/widget/header2/images/logo_28139158.svg" />
+        <header class="niu-header ">
+            <div class="header-navCont">
+                <a href="http://www.niu.com"><div class="header-brand"></div></a>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav-collapse">
+                            <a href="javascript:;">小牛电动</a>
+                            <div class="collapse car-collapse">
+                                <div class="car-collapse-content">
+                                    <ul>
+                                        <li><a href="http://www.niu.com/u1" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/u1-header_d4ab9a16.jpg"><span>U1</span></a></li>
+                                        <li><a href="http://store.niu.com/m1" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/m1-header_1139524b.jpg"><span>M1</span></a></li>
+                                        <li><a href="http://store.niu.com/n1s" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/n1-header_d387c5e9.jpg"><span>N1S</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a target="_blank" href="http://store.niu.com">商城</a></li>
+                        <li class="header-nav-collapse">
+                            <a href="javascript:;">授权体验店</a>
+                            <div class="collapse expstore-collapse">
+                                <div class="expstore-collapse-content">
+                                    <ul>
+                                        <li><a href="http://service.niu.com/service/expstore/authorized" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/expstore1_0c44c6f4.jpg"><span>授权体验店</span></a></li>
+                                        <li><a href="http://service.niu.com/service/expstore/maintenance" target="_blank"><img src="//www.niu.com/blank.gif" data-src="//www.niucache.com/static/common/widget/header2/images/expstore2_e1f47251.jpg"><span>服务维修中心</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-nav-collapse">
+                            <a target="_blank" href="http://www.niu.com/service/hall/">服务</a>
+                            <div class="collapse service-collapse">
+                                <div class="service-collapse-content">
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="http://www.niu.com/niucare">
+                                                <div class="service-collapse-content-icon service-care-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>NIU CARE</p>
+                                                    <p>保养计划</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.niu.com/niucover">
+                                                <div class="service-collapse-content-icon service-insurence-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>牛油保</p>
+                                                    <p>人车保险</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="http://service.niu.com/expstore/authorized">
+                                                <div class="service-collapse-content-icon service-locate-icon">
+
+                                                </div>
+                                                <div class="service-collapse-content-title">
+                                                    <p>授权体验店</p>
+                                                    <p>查找线下服务</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a target="_blank" href="http://bbs.niu.com">社区</a></li>
+                        <li><a class="hundmilicon" target="_blank" href="http://hd.niu.com/1"><img src="//www.niucache.com/static/common/widget/header2/images/hundmilIcon2_3e23c8ba.png" title="一亿公里"></a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <ul class="header-link">
+                        <li class="header-link-item" id="head_menu_userstatus">
+                            <a href="javascript:;"><i class="icon-profile"></i></a>
+                        </li>
+                        <li class="header-link-item" id="head_menu_cartlist">
+                            <a target="_blank" href="http://www.niu.com/cart"><i class="icon-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <header class="niu-header-m">
+            <nav class="header-nav shadow J_headerNav">
+                <div class="header-nav-box">
+                    <div class="header-nav-menu">
+                        <div class="header-nav-menu-bread J_bread">
+                            <span class="header-nav-menu-bread-t">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                            <span class="header-nav-menu-bread-m">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                            <span class="header-nav-menu-bread-b">
+                                <span class="header-nav-menu-bread-crack"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <a class="header-nav-logo" href="https://m.niu.com">
+                        <span></span>
+                    </a>
+                    <a class="header-nav-user" href="https://m.niu.com/center/"><i class="icon-profile"></i></a>
+                    <a class="header-nav-cart" href="https://m.niu.com/cart/"><i class="icon-cart"></i></a>
+                </div>
+            </nav>
+            <div class="mheaderMenu-layer J_menuLayer">
+                <ul class="mheaderMenu-layer-list">
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay10" data-target="https://m.niu.com/n1s/">小牛电动 N1S</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay15" data-target="https://m.niu.com/m1/">小牛电动 M1</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay20" data-target="http://www.niu.com/u1/">小牛电动 U1</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay25" data-target="https://m.niu.com/store/">小牛商城</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay30" data-target="https://m.niu.com/niucover/">牛油保</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay35" data-target="http://bbs.niu.com/">社区</li>
+                    <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay40" data-target="https://m.niu.com/expstore/">网点</li>
+                </ul>
+            </div>
+        </header>
+    </div>
+}
+
+<!--[if lt IE 9]>
+<script>
+(function(w){
+  var doc = w.document, docElem = doc.documentElement,
+    head = doc.getElementsByTagName("head")[0] || docElem,
+    linkEle = doc.getElementById('header_links');
+    linkEle.parentNode.removeChild(linkEle);
+    head.insertBefore(linkEle,head.lastChild);
+})(window);
+</script>
+<script src="//www.niucache.com/static/common/static/common/lib/respond_b890fb80.js"></script>
+<![endif]-->
+@section Body
+{
+
+
+
+
+    <section id="process2" class="shoppingprocess">
+        <div class="sp-content">
+            <ul class="process">
+                <li class="select1 pbtn">1.我的购物车</li>
+                <li class="select2 pbtn">2.填写订单信息</li>
+                <li class="select3 pbtn">3.完成支付</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="shopping-address">
+        <div class="title">
+            订单信息
+        </div>
+        <div class="confirm-content">
+            <div class="confrim-content-title">
+                <span>收货地址</span>
+
+            </div>
+            <div id="J_addaddress" class="addaddress">
+                <form id="J_subaddress" name="subaddress">
+                    <div class="address-block">
+                        <dl>
+                            <dt>姓名*</dt>
+                            <dd><input type="text" autocomplete="off" placeholder="请填写收货人姓名" id="input_fullName" name="fullName" verify="zhenname:!" msg="请输入2-15位的汉字或英文字母:请输入收货人姓名"></dd>
+                            <dt>手机号*</dt>
+                            <dd><input type="text" autocomplete="off" placeholder="请填写收货人手机号" id="input_mobile" name="mobile" verify="mobiletel:!" msg="请输入正确的手机号:请输入手机号"></dd>
+                            <dt>固定电话</dt>
+                            <dd><input type="text" autocomplete="off" placeholder="请填写收货人固定电话" id="input_phone" name="phone" verify="phone" msg="请输入正确的固定电话"></dd>
+                        </dl>
+                    </div>
+                    <div class="address-block editaddress-m">
+                        <dl>
+                            <dt>所在地区*</dt>
+                            <dd class="sele-area">
+                                <select id ="J_province">
+
+                                    <option value="" class="address-select select-province">
+                                        <input class="sele-input-province" type="text" autocomplete="off" readonly placeholder="省份/自治区" name="province_show" verify="str:!" msg="请选择省份/自治区:请选择省份/自治区">
+                                        <i></i>
+                                    </option>
+
+                                </selectid>
+
+                                <span id="J_city" class="address-select select-city"><input class="sele-input-city" type="text" autocomplete="off" readonly placeholder="城市/地区" name="city_show" verify="str:!" msg="请选择城市/地区:请选择城市/地区"><i></i></span>
+
+                                <ul class="addcon province-content"></ul>
+                                <ul class="addcon city-content"></ul>
+                            </dd>
+
+
+                            <dt></dt>
+                            <dd class="sele-area">
+                                <span id="J_street" class="address-select select-street"><input class="sele-input-street" type="text" autocomplete="off" readonly placeholder="区/县" name="street_show" verify="str:!" msg="请选择区/县:请选择区/县"><i></i></span>
+
+
+                                <ul class="addcon street-content"></ul>
+                            </dd>
+                            <dt>详细地址*</dt>
+                            <dd>
+                                <input placeholder="请填写收货人详细地址" id="input_addressLine1" name="addressLine1" verify="addressline:!" msg="请正确填写详细地址,并且不能超过40个字符:请填写收货人详细地址" />
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="address-block">
+                        <dl>
+                            <dt>邮政编码</dt>
+                            <dd>
+                                <input type="text" autocomplete="off" placeholder="请填写邮政编码" id="input_postalCode" name="postalCode" verify="postcode" msg="请填写正确的邮政编码">
+                            </dd>
+                            <dt>地址标签</dt>
+                            <dd>
+                                <input type="text" autocomplete="off" placeholder="如“家”、“公司”" id="input_addressName" name="addressName" verify="addresstag" msg="">
+                            </dd>
+                            <dt>设为默认</dt>
+                            <dd>
+                                <input type="checkbox" autocomplete="off" id="input_isDefault" name="isDefault" value="true">
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="addressOprationBtn">
+                        <span id="J_canceladdaddressbtn" class="niu-btn niu-btn-gray niu-btn-middle">取消</span>
+                        <span id="J_modaddressbtn" class="niu-btn niu-btn-red niu-btn-middle modaddressbtngroup">修改地址</span>
+                        <span id="J_addaddressbtn" class="niu-btn niu-btn-red niu-btn-middle addaddressbtngroup">添加地址</span>
+                    </div>
+
+                    <input class="hide" id="input_addressId" name="addressId" value="">
+                    <input class="hide" id="input_country" name="country" value="CN">
+                    <input class="hide" id="input_province" name="subDivision" value="">
+                    <input class="hide" id="input_city" name="city" value="">
+                    <input class="hide" id="input_district" name="district" value="">
+                    <input class="hide" id="input_countryLocalName" name="countryLocalName" value="中国">
+                    <input class="hide" id="input_provinceLocalName" name="subDivisionLocalName" value="">
+                    <input class="hide" id="input_cityLocalName" name="cityLocalName" value="">
+                    <input class="hide" id="input_districtLocalName" name="districtLocalName" value="">
+                </form>
+            </div>
+
+            <div id="J_addressbox" class="addressbox">
+
+
+                <div id="J_additem" class="addressitem addaddressitem"></div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="confrim-content-title">支付方式</div>
+            <span class="payway">在线支付（支付宝、微信扫码、京东支付）</span>
+            <div class="confrim-content-title">配送方式</div>
+            <span>整车由日日顺或顺丰物流配送 配件由顺丰快递单独配送<span class="kuaidi"></span></span>
+            <div class="confrim-content-title">优惠券</div>
+            <div class="confirm-coupon">
+                <div class="confirm-coupon-select">
+                    <input class="confirm-input coupon-select-input" type="text" readonly placeholder="选择优惠券" data-rescode="" data-code="" data-rate="" value="">
+                    <i></i>
+                    <div class="coupon-content">
+                        <ul class="couponlist">
+
+                            <li>无可用优惠券</li>
+
+                        </ul>
+                        <div class="couponadd">
+                            <input class="confirm-input couponinput" autocomplete="off" placeholder="请填写优惠码"> <span class="niu-btn niu-btn-small niu-btn-red checkcoupon" id="checkcoupon">添加</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line2">
+            <div class="fapiao">
+                <p>
+                    <span>发票信息</span>
+                    <span class="fapiaobtn qiyefapiao onselect" group="fapiaotype" data-taxtype="2">电子</span>
+                    <span class="fapiaobtn gerenfapiao" group="fapiaotype" data-taxtype="1">普通</span>
+
+                </p>
+                <div class="taitou putongfapiao hide">
+                    <p>
+                        <span class="fapiaobtn dianzi onselect" group="fapiao" data-taxtype="1">个人</span>
+                        <span class="fapiaobtn  putong" group="fapiao" data-taxtype="2">单位</span>
+                    </p>
+                </div>
+                <div class="taitou dianzifapiao onselect">
+                    <p>
+                        <span class="fapiaobtn dianzi onselect" group="fapiao2" data-taxtype="3">个人</span>
+                        <span class="fapiaobtn  putong" group="fapiao2" data-taxtype="4">单位</span>
+                    </p>
+                </div>
+                <p class="dianzi_des">电子发票是税局认可的有效凭证，其法律效力、基本用途及使用规定同纸质发票，如需纸质票可自行下载打印。</p>
+                <div class="taitou">发票抬头：<input id="input_taxTitle" class="fapiaotaitou confirm-input" type="text" autocomplete="off" placeholder="为了方便上牌照，请您填写真实姓名" value=""></div>
+                <div class="taxcompany taitou hide">企业税号：<input id="input_taxCompany" class="taxcompanyNo confirm-input" type="text" autocomplete="off" placeholder="请填写企业税号" value=""></div>
+                <p>发票内容：购买商品明细</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="shopping-address">
+        <div class="title">
+            <div class="title_meaasge">商品信息</div>
+            <div class="title_price">单价</div>
+            <div class="title_num">数量</div>
+            <div class="title_total">小计</div>
+        </div>
+
+
+
+
+
+
+
+        <div class="cartBox">
+
+
+
+            <ul class="cartItem">
+                <li class="cartItem-img">
+                    <img src="https://www.niucache.com/api/img/sku/571?imageView2/2/w/500/">
+                </li>
+
+                <li class="cartItem-name">
+                    <div class="cartItem-name-c">
+                        <p>小牛电动NIU U1 动力蓝</p>
+
+                        <p class="subhead"></p>
+                    </div>
+                </li>
+
+                <li class="cartItem-price">
+                    3899元
+                </li>
+                <li class="cartItem-num">×1</li>
+                <li class="cartItem-totalprice">3899元</li>
+            </ul>
+
+
+            <div class="cartBox-bottom">
+                <span>共计1件商品</span>
+                <div class="total">
+                    <p class="J_itemTotal">商品合计：3899元</p>
+                    <p class="J_shippingTotal">配送费用：248元</p>
+                    <p class="J_shipping">优惠金额：0元</p>
+                    <p class="yingfujine J_orderTotal" data-money="4147">费用总计：4147元</p>
+                </div>
+                <input type="hidden" id="shippingTotal" value="248">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="goapply">
+        <span id="goapply" class="niu-btn niu-btn-red niu-btn-large">立即支付</span>
+    </div>
+
+    <li id="T_province" class="hide"></li>
+    <li id="T_city" class="hide"></li>
+    <li id="T_street" class="hide"></li>
+    <div class="niu-mask"></div>
+
+
+}
+
+
+
+@section FooterLink_Script{
+
+    <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="//www.niucache.com/static/common/common_00b45ee5.js"></script>
+    <script type="text/javascript">require.resourceMap({ "res": { "home:static/common/lib/niu.template.js": { "url": "//www.niucache.com/static/home/static/common/lib/niu.template_2d2b8c57.js" }, "home:static/common/lib/niu.verify.js": { "url": "//www.niucache.com/static/home/static/common/lib/niu.verify_92cfbe82.js", "deps": ["common:widget/plugin/dialog/dialog.js"] } }, "pkg": {} });</script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/shopping_process_nav/shopping_process_nav_be0d9234.js"></script>
+    <script type="text/javascript" src="//www.niucache.com/static/home/widget/shopping_confirm/shopping_confirm_696310a7.js"></script>
+    <script type="text/javascript">
+        !function () {
+
+            require.async("common:widget/header2/header.js");
+            require.async("common:widget/headerCart/headerCart.js");
+            require.async("common:widget/headerUserStatus/headerUserStatus.js");
+        }();
+        !function () {
+            window.fid = 0;
+            window.fullName = '';
+            window.lineItems = {};
+            window.globalCart = [{ "depotId": "XN0001", "quantity": "1", "reservationId": "", "createAt": "1509851674918", "itemAttribute": [], "remarks": { "nameBoard": "", "reservationId": "" }, "userId": "59fe7714fb24f21c391777f6", "skuId": "571", "id": 571, "skuNumber": "NU01U1PB", "name": "小牛电动NIU U1 动力蓝", "price": { "salePrice": 3899, "retailPrice": 3899 }, "availableFlag": "Y", "activeSpan": { "activeStartDate": 1491840000000, "activeEndDate": null }, "description": { "description": "", "longDescription": "LONG DESCRIPTION" }, "dimension": { "width": 0, "height": 0, "depth": 0, "girth": 0, "dimensionUnitOfMeasure": " CM" }, "weight": 0, "weightUnitOfMeasure": "KG", "currencyCode": "CHN", "defaultProductId": 133, "marketModel": "INVENTORY", "limitSale": -1, "payLength": 7200, "inventoryAvailable": 0, "inventoryVirtual": 0, "inventoryLock": 0, "inventoryLine": 0, "fulfillmentType": "RIRISHUN", "freight": 248, "options": [{ "颜色": "蓝色" }, { "型号": "动力版" }], "itemId": "15098516749185450", "package": {} }];
+            window.youhuiquancode = "";
+            if (window.globalCart.length == 0) { window.location.href = "/"; }
+        }();
+        !function () {
+            require.async("home:static/common/lib/niu.template.js");
+        }();
+        !function () {
+            require.async("home:static/common/lib/niu.verify.js");
+        }();
+        !function () {
+            require.async("home:widget/shopping_confirm/shopping_confirm.js", function (pageDetail) {
+                pageDetail.init();
+            });
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+}
+
+<script>
+    var result;
+    $(function () {
+        $.getJSON("~/Data/cityjson.json",
+            null,
+            function (data) {
+                //获取数据
+                result = eval(data);
+
+                //绑定省份
+                $("#J_province").empty();
+                $("#J_province").append('<option value="">省份/自治区</option> ');
+                $.each(result,
+                    function (index, Province) {
+
+                        $("#J_province").append('<option value="' + Province.name + '">' + Province.name + '</option>');
+
+                    });
+
+                //选择省份事件
+                $("#J_province").change(function () {
+
+                    var s = this.value;
+                    $("#J_city").empty();
+                    $("#J_city").append('<option value="">城市/地区');
+
+                    $.each(result, function (index, Province) {
+
+
+                        if (s == Province.name) {
+
+                            //绑定市
+                            $.each(Province.city, function (ii, city) {
+
+                                $("#J_city").append('<option value="' + city.name + '">' + city.name + '</option>');
+
+                            });
+
+                            $("#J_city").change();
+                        }
+
+                    });
+                });
+
+                //选择市
+                $("#J_city").change(function () {
+                    var s = $("#J_province").val();
+                    var c = $("#J_city").val();
+                    $("#J_street").empty();
+                    $("#J_street").append('<option value="">区/县</option>');
+
+                    $.each(result, function (index, Province) {
+
+
+                        if (s == Province.name) {
+
+                            //绑定市
+                            $.each(Province.city, function (ii, city) {
+
+                                if (c == city.name) {
+
+                                    //绑定区
+                                    $.each(city.area, function (iii, area) {
+
+                                        $("#J_street").append('<option value="' + area + '">' + area + '</option>');
+
+                                    });
+
+                                }
+
+                            });
+
+                        }
+
+                    });
+
+                });
+
+                $("#J_city").click(function () {
+
+                    if ($("#J_city option").length == 1)
+                        alert("请先选择省");
+                });
+
+                $("#J_street").click(function () {
+
+                    if ($("#J_street option").length == 1)
+                        alert("请先选择市");
+                });
+
+            });
+    });
+
+
+</script>
+
+
+
+
+
+
+
+

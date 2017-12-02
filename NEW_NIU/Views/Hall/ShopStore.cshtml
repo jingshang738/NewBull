@@ -1,0 +1,156 @@
+﻿@{
+    ViewBag.Title = "shopStore";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+    NEW_NIU.Models.N_Product p = new NEW_NIU.Models.N_Product();
+}
+
+
+@section HeadScript_Link{
+    <link rel="stylesheet" href="//store.niucache.com/static/common/common_6c4817c9.css" />
+<link rel="stylesheet" href="//store.niucache.com/static/store/widget/store/list/list_dc6dbb2e.css" />
+<link rel="stylesheet" href="//store.niucache.com/static/store/widget/store/list/widget/productCard1/productCard1_9c909a8e.css" />
+<link rel="stylesheet" href="//store.niucache.com/static/store/widget/store/list/widget/productCard3/productCard3_4e3ea62d.css" />
+<link rel="stylesheet" href="//store.niucache.com/static/store/widget/store/list/widget/productCard2/productCard2_92d4a31b.css" />
+}
+
+@section HeadLink{
+    
+<link href="/Content/style_6965f5af.css" rel="stylesheet" />
+}
+
+@section Body{
+   
+<section class="shopStore">
+    <article class="shopStore-slider">
+        <ul>
+            <li class="gridBox-link shopStore-kv-3" data-type="link" data-target="http://store.niu.com/detail/144"></li>
+            <li class="gridBox-link shopStore-kv-4" data-type="link" data-target="http://store.niu.com/detail/145"></li>
+            <li class="gridBox-link shopStore-kv-1" data-type="link" data-target="http://store.niu.com/detail/91"></li>
+            <li class="gridBox-link shopStore-kv-2" data-type="link" data-target="http://store.niu.com/detail/75"></li>
+        </ul>
+    </article>
+    <article class="shopStore-escooter">
+        <div class=" shopStore-escooter-title">
+            <p class="shopStore-escooter-title-b">红牛电动</p>
+            <p class="shopStore-escooter-title-m">E-Scooter</p>
+        </div>
+        <div class="shopStore-escooter-products">
+            <a href="http://www.niu.com/u1" target="_blank">
+                <div class="shopStore-escooter-products-u1">
+                    <div class="shopStore-escooter-products-img">
+                        <img src="//store.niucache.com/static/store/widget/store/list/images/u1_72145162.jpg">
+                    </div>
+                    <div class="shopStore-escooter-products-des">
+                        <span class="shopStore-escooter-products-des-name">红牛电动 U1</span>
+                        <span class="shopStore-escooter-products-des-price">2999起</span>
+                        <ul class="shopStore-escooter-products-des-color">
+                            <li class="icon-circle white"></li>
+                            <li class="icon-circle red"></li>
+                            <li class="icon-circle bluelight"></li>
+                            <li class="icon-circle purple"></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="http://store.niu.com/m1" target="_blank">
+                <div class="shopStore-escooter-products-m1">
+                    <div class="shopStore-escooter-products-img">
+                        <img src="//store.niucache.com/static/store/widget/store/list/images/M1_9626b025.jpg">
+                    </div>
+                    <div class="shopStore-escooter-products-des">
+                        <span class="shopStore-escooter-products-des-name">红牛电动 M1</span>
+                        <span class="shopStore-escooter-products-des-price">4699起</span>
+                        <ul class="shopStore-escooter-products-des-color">
+                            <li class="icon-circle white"></li>
+                            <li class="icon-circle red"></li>
+                            <li class="icon-circle blue"></li>
+                            <li class="icon-circle gray"></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="http://store.niu.com/n1s/" target="_blank">
+                <div class="shopStore-escooter-products-n1">
+                    <div class="shopStore-escooter-products-img">
+                        <img src="//store.niucache.com/static/store/widget/store/list/images/N1_ff546d83.jpg">
+                    </div>
+                    <div class="shopStore-escooter-products-des">
+                        <span class="shopStore-escooter-products-des-name">红牛电动 N1S</span>
+                        <span class="shopStore-escooter-products-des-price">5899起</span>
+                        <ul class="shopStore-escooter-products-des-color">
+                            <li class="icon-circle white"></li>
+                            <li class="icon-circle red"></li>
+                            <li class="icon-circle blue"></li>
+                            <li class="icon-circle gray"></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </article>
+    <article class="shopStore-productList">
+        <div class="shopStore-productList-content">
+            @foreach (NEW_NIU.Models.N_Category c in ViewBag.clist)
+            {
+                <div class="shopStore-productList-categoryTitle">
+                <span class="shopStore-productList-title1">@c.chName</span><span class="shopStore-productList-title2">@c.enName</span>
+            </div>
+            <div class="shopStore-productList-category">
+
+                @foreach (NEW_NIU.Models.N_Product product in p.GetAllByCate(c.id))
+                {
+                    <a href="@Url.Action("Detail", "Product", new { id=product.id})" target="_blank">
+                    <div class="widget-productCard1">
+
+                        <div class="widget-productCard1-img">
+                            <img src="@product.storeCoverPic">
+                        </div>
+                        <div class="widget-productCard1-des">
+                            <p class="widget-productCard1-desL">@product.name</p>
+                            <p class="widget-productCard1-desM">@product.storeCoverDesc</p>
+                            <span>￥@product.storeCoverPrice</span>
+                        </div>
+                    </div>
+                </a>
+                }
+            </div>
+            }                       
+        </div> 
+    </article>
+</section>
+
+
+<div class="video-mask hide"></div>
+<div class="video-content hide">
+    <embed class="video-content-embed" src="" quality="high" width="1140" height="640" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"></embed>
+    <span class="icon-cross video-content-close"></span>
+</div>
+}
+
+@section FooterLink_Script{
+   <script type="text/javascript" src="//dn-bughd-web.qbox.me/bughd.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    window.bughd = window.bughd || function () { };
+    bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+</script>
+
+<script type="text/javascript" src="//store.niucache.com/static/common/common_00b45ee5.js"></script>
+<script type="text/javascript" src="//store.niucache.com/static/store/widget/store/list/list_e23783f9.js"></script>
+<script type="text/javascript">
+    !function () {
+
+        require.async("common:widget/header2/header.js");
+        require.async("common:widget/headerCart/headerCart.js");
+        require.async("common:widget/headerUserStatus/headerUserStatus.js");
+    }();
+    !function () {
+        require.async("store:widget/store/list/list.js");
+    }();
+    !function () {
+        require.async("common:widget/sliderAction/sliderAction.js");
+    }();
+    !function () {
+        require.async("common:widget/footer/footer.js");
+    }();</script>
+
+}

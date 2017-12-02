@@ -1,0 +1,273 @@
+﻿@{
+    ViewBag.Title = "小牛电动- 十万牛油骑行直播";
+    Layout = "~/Views/Shared/New_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+@section HeadScript_Link{
+
+
+    <!--[if lt IE 9]>
+        <script src="~/Content/KMiles/js/html5shiv_23e126e6.js"></script>
+    <link rel="stylesheet" href="~/Content/KMiles/css/common_1c8cd55a.css" />
+    <link rel="stylesheet" href="~/Content/KMiles/css/index_eca149dd.css" />
+}
+
+
+
+@section HeadLink{
+
+    <script>
+        (function () {
+            var o = navigator.userAgent,
+            r = function (r) {
+                return o.indexOf(r) > -1
+            };
+            if ((r("Android") && r("Mobile") || r("iPhone") || r("Symbian") || r("IEMobile"))) {
+                location.href = 'http://hd.niu.com/1/mobile';
+            }
+        })();
+    </script>
+
+
+
+    <link rel="stylesheet" id="header_links" type="text/css" href="~/Content/KMiles/css/style_d03269f1.css" />
+    }
+    
+
+    <!--[if lt IE 9]>
+    <script>
+    (function(w){
+      var doc = w.document, docElem = doc.documentElement,
+        head = doc.getElementsByTagName("head")[0] || docElem,
+        linkEle = doc.getElementById('header_links');
+        linkEle.parentNode.removeChild(linkEle);
+        head.insertBefore(linkEle,head.lastChild);
+    })(window);
+    </script>
+    <script src="~/Content/KMiles/js/respond_b890fb80.js"></script>
+    <![endif]-->
+
+
+
+@section Body{
+
+
+    <input type="hidden" class='J_niufont' data-class='niu-font' value='PingFang Light'>
+    <input type="hidden" class='J_niufont' data-class='niu-num-font' value='DINOffcPro-CondBold'>
+    <span class='hide niu-num-font'>
+       
+    </span>
+
+    <div class="hundmil-main J_main hide">
+        <div class="hundmil-head">
+            <div class="abs-text">
+                <div class="title-logo"></div>
+                <h2 class="title ">
+                    10万牛油累计骑行里程突破 1亿公里
+                </h2>
+            </div>
+        </div>
+        <div class="hudmil-map">
+            <div class="map-kilometers">
+                <h3 class="kilo-title">
+                    十万牛油骑行直播
+                </h3>
+                <div class="kilo-scroll-block">
+                    <h2 class="left-title niu-font">
+                        当前时间: <span class='J_time time-block niu-num-font'></span>
+                    </h2>
+                    <h2 class="right-title">
+                        累计总里程
+                    </h2>
+                    <ul class="kilo-num-block J_kilo clearfix">
+                        <li>
+                            <div class="li-block">
+                                <div class="num-container">
+                                    <span>#</span>
+                                    <span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+                                    <span>7</span>
+                                    <span>8</span>
+                                    <span>9</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="unit-block">
+                        KM
+                    </div>
+                </div>
+            </div>
+            <div class="map-main" id='J_mapMain'></div>
+            <div class="font-wen"> 最长距离骑行者 <span class='big-yellow'></span> 总骑行人数 </div>
+            <div id="J_mapChart" class="map-line-chart">
+            </div>
+            <ul class="line-block">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class='bold'></li>
+            </ul>
+            <div class="share-block clearfix">
+                <div class="left-img J_leftWei">
+
+                </div>
+                <div class="code-block J_codeBlock">
+                    <div class="code-img"></div>
+                </div>
+                <div class="right-link J_share"></div>
+            </div>
+        </div>
+        <div class="hundmil-city">
+            <div class="city-title niu-font">
+                你所在城市
+            </div>
+            <div class="current-city-block clearfix">
+                <div class="left-block">
+                    <div class="current-city-title J_currentCityBlock">
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="order-block">
+                        <h2 class='order-title'>
+                            今日城市排名 <span class='num big J_currentOrder'></span>
+                            <span class="comp-block  J_currentCompare hide">
+                                较昨日排名:
+                                <b class='sml'></b>名
+                            </span>
+                        </h2>
+                        <h4 class="order-detail J_currenOrderList"></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="top-city-list-block clearfix">
+                <div class="left-top-city">
+                    看看其他城市:
+                </div>
+                <div class="mid-top-city J_cityTopList">
+
+                </div>
+                <div class="right-top-city">
+                    <span class="change-city-block" id='J_changeCityBlock'>
+                        更换城市
+                    </span>
+                    <input type="hidden" id="J_province" value="">
+                    <input type="hidden" id="J_city" value="">
+                </div>
+            </div>
+            <div class="city-title niu-font city-title-order">
+                今日里程贡献排行
+            </div>
+            <ul class="order-city-block">
+                <li class="left-city">
+                    <h3 class="order-city-title J_CityTitle0 ">
+                        <b>TOP1</b> <span></span>
+                    </h3>
+                    <p class="city-content  J_LogBlock0">
+                    </p>
+
+                </li>
+                <li class="right-top-city">
+                    <h3 class="order-city-title J_CityTitle1 ">
+                        <b>TOP2</b> <span></span>
+                    </h3>
+                    <p class="city-content J_LogBlock1">
+                    </p>
+                </li>
+                <li class="right-bottom-city">
+                    <h3 class="order-city-title J_CityTitle2 ">
+                        <b>TOP3</b> <span></span>
+                    </h3>
+                    <p class="city-content J_LogBlock2">
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="loading-block J_loading">
+        <div class="loading-content">
+            <div class="rect-a"></div>
+            <div class="rect-b"></div>
+        </div>
+        <div class="load-info">
+            十万牛油骑行直播
+        </div>
+        <div class="loading-line"></div>
+    </div>
+    <div class="hide">
+        <img src="~/Content/KMiles/img/m-26_20ce36bd.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-27_9cec3e15.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-28_1f2456ab.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-29_7bbc6c5e.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-30_99570280.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-31_ad903e6f.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-32_45b5d493.jpg" alt="">
+        <img src="~/Content/KMiles/img/m-33_999cdb93.jpg" alt="">
+    </div>
+
+    <script type="text/javascript" src="~/Content/KMiles/js/webapi.js"></script>
+
+    <script src="/static/js/pickCity.js"></script>
+    <script src="/static/js/echarts-all-3.js"></script>
+    <script src="/static/js/china.js"></script>
+
+
+    }
+
+@section FooterLink_Script{
+ 
+
+
+
+
+    <script type="text/javascript" src="~/Content/KMiles/js/bughd.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.bughd = window.bughd || function () { };
+        bughd("create", { key: "ec0399cd9efd19e4ed66a94c56fd4bc6" });
+    </script>
+    <script type="text/javascript" src="~/Content/KMiles/js/common_a643af9d.js"></script>
+    <script type="text/javascript" src="~/Content/KMiles/js/map_7ae83ca9.js"></script>
+    <script type="text/javascript" src="~/Content/KMiles/js/line_57404971.js"></script>
+    <script type="text/javascript" src="~/Content/KMiles/js/address_25b81a64.js"></script>
+    <script type="text/javascript" src="~/Content/KMiles/js/map_ae07f305.js"></script>
+    <script type="text/javascript" src="~/Content/KMiles/js/index_bcdfda77.js"></script>
+    <script type="text/javascript">
+!function () {
+
+    require.async("common:widget/header2/header.js");
+    require.async("common:widget/headerCart/headerCart.js");
+    require.async("common:widget/headerUserStatus/headerUserStatus.js");
+}();
+        !function () {
+
+            require.async('hd:widget/hundmil/index.js', function (mb) {
+                mb();
+            });
+        }();
+        !function () {
+            require.async("common:widget/footer/footer.js");
+        }();</script>
+}
+
+
+
+
+
+
+

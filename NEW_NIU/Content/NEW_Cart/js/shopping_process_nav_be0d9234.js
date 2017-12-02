@@ -1,0 +1,1 @@
+﻿define("home:widget/shopping_process_nav/shopping_process_nav.js", function () { });
